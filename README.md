@@ -104,6 +104,12 @@ Deploy `out/` to S3:
 aws s3 sync out/ s3://YOUR_BUCKET_NAME --delete
 ```
 
+This repo also includes a helper script for a private S3 bucket behind CloudFront:
+
+```bash
+./scripts/deploy-aws-static.sh
+```
+
 Recommended CloudFront setup:
 
 - S3 bucket with static website hosting or private bucket behind Origin Access Control.
