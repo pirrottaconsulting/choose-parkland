@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-05-02T13:30:59.577Z",
+  "sources": [
+    {
+      "id": "pde-2025-pssa-district",
+      "name": "2025 PSSA District Level Data",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-district-level-data.xlsx",
+      "localPath": "data/raw/pde/2025-pssa-district-level-data.xlsx",
+      "category": "pssa",
+      "level": "district",
+      "schoolYear": "2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:38.938Z",
+      "bytes": 4808196
+    },
+    {
+      "id": "pde-2025-pssa-school",
+      "name": "2025 PSSA School Level Data",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+      "localPath": "data/raw/pde/2025-pssa-school-level-data.xlsx",
+      "category": "pssa",
+      "level": "school",
+      "schoolYear": "2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:39.856Z",
+      "bytes": 17988831
+    },
+    {
+      "id": "pde-2025-pssa-state",
+      "name": "2025 PSSA State Level Data",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-state-level-data.xlsx",
+      "localPath": "data/raw/pde/2025-pssa-state-level-data.xlsx",
+      "category": "pssa",
+      "level": "state",
+      "schoolYear": "2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:40.428Z",
+      "bytes": 26210
+    },
+    {
+      "id": "pde-2025-keystone-district",
+      "name": "2025 Keystone District Level Data",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-district-level-data.xlsx",
+      "localPath": "data/raw/pde/2025-keystone-district-level-data.xlsx",
+      "category": "keystone",
+      "level": "district",
+      "schoolYear": "2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:41.114Z",
+      "bytes": 999563
+    },
+    {
+      "id": "pde-2025-keystone-state",
+      "name": "2025 Keystone State Level Data",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-state-level-data.xlsx",
+      "localPath": "data/raw/pde/2025-keystone-state-level-data.xlsx",
+      "category": "keystone",
+      "level": "state",
+      "schoolYear": "2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:41.732Z",
+      "bytes": 15272
+    },
+    {
+      "id": "pde-2025-keystone-school",
+      "name": "2025 Keystone School Level Data",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+      "localPath": "data/raw/pde/2025-keystone-school-level-data.xlsx",
+      "category": "keystone",
+      "level": "school",
+      "schoolYear": "2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:42.367Z",
+      "bytes": 1553737
+    },
+    {
+      "id": "future-ready-performance-2024-2025",
+      "name": "Future Ready Performance Data for SY 2024-2025",
+      "url": "https://futurereadypa.org/home/getdatafile?id=60",
+      "localPath": "data/raw/future-ready/performance-2024-2025.xlsx",
+      "category": "future-ready",
+      "level": "performance",
+      "schoolYear": "2024-2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:43.487Z",
+      "bytes": 5113109
+    },
+    {
+      "id": "future-ready-school-fast-facts-2024-2025",
+      "name": "School Fast Facts for SY 2024-2025",
+      "url": "https://futurereadypa.org/home/getdatafile?id=58",
+      "localPath": "data/raw/future-ready/school-fast-facts-2024-2025.xlsx",
+      "category": "future-ready",
+      "level": "school-fast-facts",
+      "schoolYear": "2024-2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:44.104Z",
+      "bytes": 683673
+    },
+    {
+      "id": "future-ready-district-fast-facts-2024-2025",
+      "name": "District Fast Facts for SY 2024-2025",
+      "url": "https://futurereadypa.org/home/getdatafile?id=59",
+      "localPath": "data/raw/future-ready/district-fast-facts-2024-2025.xlsx",
+      "category": "future-ready",
+      "level": "district-fast-facts",
+      "schoolYear": "2024-2025",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:44.650Z",
+      "bytes": 131584
+    },
+    {
+      "id": "parkland-virtual-academy-page",
+      "name": "Parkland Virtual Academy public program page",
+      "url": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+      "localPath": "data/raw/program/parkland-virtual-academy.html",
+      "category": "program",
+      "schoolYear": "2025-2026",
+      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "fileDate": "2026-05-02T13:30:46.281Z",
+      "bytes": 56148
+    }
+  ]
+}

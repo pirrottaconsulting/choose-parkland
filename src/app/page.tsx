@@ -1,139 +1,140 @@
 import Link from "next/link";
-import { ClaimBlock } from "@/components/ClaimBlock";
-import { ComparisonCard } from "@/components/ComparisonCard";
-import { DataCallouts } from "@/components/DataCallouts";
+import { ComparisonExplorer } from "@/components/ComparisonExplorer";
+import { DataDashboard } from "@/components/DataDashboard";
+import { DataTable } from "@/components/DataTable";
 import { Section } from "@/components/Section";
-import { SourceNote } from "@/components/SourceNote";
-import { comparisonCriteria, lastUpdated } from "@/data";
-import { getClaim } from "@/lib/site";
+import { SourceList } from "@/components/SourceList";
+import { comparisonContent, metricBy } from "@/lib/generated";
 
 export default function Home() {
-  const heroClaim = getClaim("compare-before-deciding");
+  const parklandEla = metricBy("parkland-school-district", "Percent proficient or advanced", "English Language Arts");
+  const circleEla = metricBy("circle-of-seasons-charter-school", "Percent proficient or advanced", "English Language Arts");
 
   return (
     <>
       <section className="relative overflow-hidden bg-[#f7fbf8]">
         <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#0f766e] via-[#2563eb] to-[#f59e0b]" />
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#0f766e]">
-              Parent education comparison
+              Official-data comparison for parents
             </p>
             <h1 className="mt-5 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">
-              Compare what Parkland already offers before choosing another path.
+              Before you choose another option, compare what Parkland already offers.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-              A calm, factual guide for families evaluating district, charter, cyber charter,
-              private, and alternative education options in and around Parkland School District.
+              Choose Parkland brings PDE assessment files, Future Ready PA data, Parkland Virtual
+              Academy program information, and comparison-school records into one parent-friendly
+              decision tool.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/compare"
-                className="rounded-lg bg-slate-950 px-5 py-3 text-center text-sm font-bold text-white hover:bg-slate-800"
-              >
+              <Link href="/compare" className="rounded-lg bg-slate-950 px-5 py-3 text-center text-sm font-bold text-white hover:bg-slate-800">
                 Compare your options
               </Link>
-              <Link
-                href="/parkland-virtual-academy"
-                className="rounded-lg border border-slate-300 bg-white px-5 py-3 text-center text-sm font-bold text-slate-950 hover:border-slate-400"
-              >
+              <Link href="/parkland-virtual-academy" className="rounded-lg border border-slate-300 bg-white px-5 py-3 text-center text-sm font-bold text-slate-950 hover:border-slate-400">
                 Explore Parkland Virtual Academy
               </Link>
             </div>
-            <SourceNote sourceIds={heroClaim.sourceIds} />
           </div>
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl">
-            <div className="rounded-lg bg-slate-950 p-5 text-white">
-              <p className="text-sm font-semibold text-teal-200">Decision dashboard</p>
-              <p className="mt-3 text-3xl font-black tracking-tight">
-                District resources. Virtual flexibility. Official data.
-              </p>
-            </div>
-            <div className="mt-4 grid gap-3">
-              {["Academics", "Activities", "Support", "Community", "Accountability"].map(
-                (item) => (
-                  <div
-                    key={item}
-                    className="flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3"
-                  >
-                    <span className="font-semibold text-slate-800">{item}</span>
-                    <span className="text-sm text-slate-500">Compare</span>
-                  </div>
-                ),
-              )}
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
+              What the official data shows
+            </p>
+            <div className="mt-5 grid gap-4">
+              {comparisonContent.summaries.map((summary) => (
+                <div key={summary} className="rounded-lg bg-slate-50 p-4 text-sm font-medium leading-6 text-slate-700">
+                  {summary}
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       <Section
-        eyebrow="Latest official data"
-        title="Data first, with clear placeholders where ingestion is still pending."
-        description={`Latest official data language is used throughout. Automated source checks are scaffolded; current check status: ${lastUpdated.officialDataChecked}.`}
+        eyebrow="Data dashboard"
+        title="Real imported metrics, visible on the page."
+        description="These figures come from the current official files downloaded into the site data layer and committed with the static build."
       >
-        <DataCallouts />
+        <DataDashboard />
       </Section>
 
       <Section
         tone="soft"
-        eyebrow="What families compare"
-        title="A practical framework for choosing a school option."
-        description="The goal is not to label one option as good or bad. It is to help parents understand tradeoffs and verify facts before deciding."
+        eyebrow="Parkland Virtual Academy"
+        title="Flexibility without leaving the district connection."
+        description="Parkland Virtual Academy is included because families comparing cyber charter options should also compare a district-connected virtual path, activities access, support, and accountability."
       >
-        <div className="grid gap-5 lg:grid-cols-2">
-          {comparisonCriteria.slice(0, 4).map((criterion) => (
-            <ComparisonCard key={criterion.id} criterion={criterion} />
+        <div className="grid gap-5 lg:grid-cols-3">
+          {[
+            "Compare online flexibility with access to local district resources.",
+            "Ask how students remain connected to activities, counseling, services, and community.",
+            "Review virtual-program information alongside official academic and accountability data.",
+          ].map((item) => (
+            <div key={item} className="rounded-lg border border-slate-200 bg-white p-5 font-semibold leading-7 text-slate-800 shadow-sm">
+              {item}
+            </div>
           ))}
         </div>
       </Section>
 
       <Section
-        eyebrow="Flexibility without leaving the district"
-        title="Parkland Virtual Academy belongs in the comparison."
-        description="Families considering online learning should compare cyber charter options with any district-connected virtual pathway, including access to district resources, services, community, activities, and accountability."
+        eyebrow="Comparison selector"
+        title="Filter the comparison by what matters to your family."
+        description="Use the category controls to move between academics, flexibility, activities, support, accountability, and community connection."
       >
-        <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-          <ClaimBlock claimId="pva-flexibility" />
-          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
-              Parent pathway
-            </p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {[
-                "Ask how virtual courses are staffed.",
-                "Confirm access to activities and services.",
-                "Compare official accountability data.",
-                "Verify enrollment and eligibility details.",
-              ].map((item) => (
-                <div key={item} className="rounded-lg bg-slate-50 p-4 text-sm font-medium text-slate-700">
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <ComparisonExplorer />
       </Section>
 
       <Section
         tone="soft"
-        eyebrow="Questions parents should ask"
-        title="Before choosing a charter, cyber charter, or alternative school."
-        description="A parent-friendly sales engine should still be measured and factual. These questions help families evaluate fit without pressure."
+        eyebrow="What families usually compare"
+        title="Numbers are the start. Fit is the decision."
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[
-            "Which official data files include this school?",
-            "How current are the published performance results?",
-            "What services are available if my child needs support?",
-            "What activities and local community connections are available?",
-            "How does virtual learning keep students accountable?",
-            "What should be verified directly with the school before enrolling?",
+            "Academics: Which official results apply to the school and grade span?",
+            "Flexibility: Can a student learn online, hybrid, or in person?",
+            "Activities: What athletics, arts, clubs, and local opportunities are available?",
+            "Student support: How are counseling, special education, and services delivered?",
+            "Accountability: Which public files report outcomes and designations?",
+            "Community connection: Will the student stay connected to local peers and district life?",
           ].map((question) => (
-            <div
-              key={question}
-              className="rounded-lg border border-slate-200 bg-white p-5 font-semibold text-slate-800 shadow-sm"
-            >
+            <div key={question} className="rounded-lg border border-slate-200 bg-white p-5 text-sm font-semibold leading-6 text-slate-800 shadow-sm">
               {question}
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        eyebrow="Comparison table"
+        title="Parkland, Circle of Seasons, cyber charter, and statewide rows."
+        description={`${parklandEla?.entityName} reports ${parklandEla?.displayValue} in PSSA English Language Arts. ${circleEla?.entityName} reports ${circleEla?.displayValue} in the same imported file.`}
+      >
+        <DataTable />
+      </Section>
+
+      <Section
+        tone="soft"
+        eyebrow="Latest official data"
+        title="Source files used by this build."
+        description="Future Ready PA says its Index contains the most recent data available in the 2025-2026 school year; PDE publishes 2025 PSSA and Keystone school, district, and state Excel files."
+      >
+        <SourceList />
+      </Section>
+
+      <Section title="Parent decision checklist">
+        <div className="grid gap-3">
+          {[
+            "Compare the official data, not just program names.",
+            "Ask what services and activities are available before enrollment.",
+            "Check whether results are district-level, school-level, or statewide.",
+            "Compare cyber charter flexibility with Parkland Virtual Academy and district connection.",
+            "Confirm transportation, counseling, special education, and extracurricular details with each school.",
+          ].map((item) => (
+            <div key={item} className="rounded-lg border border-slate-200 bg-white p-4 text-slate-700 shadow-sm">
+              {item}
             </div>
           ))}
         </div>

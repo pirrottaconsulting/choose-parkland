@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const navItems = [
   { href: "/compare", label: "Compare" },
+  { href: "/best-education-options-in-parkland-school-district", label: "Options" },
   { href: "/parkland-virtual-academy", label: "Virtual Academy" },
   { href: "/parkland-vs-charter-schools", label: "Charters" },
   { href: "/parkland-vs-cyber-charter", label: "Cyber charter" },

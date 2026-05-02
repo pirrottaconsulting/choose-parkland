@@ -10,16 +10,10 @@ export const metadata: Metadata = {
 export default function AlternativesPage() {
   return (
     <LandingPage
+      slug="alternatives-to-parkland-school-district"
       eyebrow="Alternatives to Parkland School District"
       title="Considering another school option? Compare what Parkland already offers first."
-      description="Families may have good reasons to explore alternatives. This page helps parents compare options calmly, using official public data where available and verified program information where needed."
-      focusPoints={[
-        "Compare academics through official PDE and Future Ready PA files when rows are available.",
-        "Verify whether flexible learning can happen through Parkland Virtual Academy before leaving the district.",
-        "Ask each option how services, activities, counseling, and accountability work in practice.",
-        "Separate program fit from unsupported assumptions by checking source labels and update dates.",
-      ]}
-      sourceIds={["pde-assessment-reporting", "future-ready-data-files", "parkland-virtual-academy"]}
+      description="Families may have good reasons to explore alternatives. This page compares official academic, support, accountability, and program data without treating any option as automatically right or wrong."
     />
   );
 }

@@ -29,6 +29,11 @@ jobs:
         id: check
         run: npm run data:check
 
+      - name: Summarize data changes
+        run: npm run data:summarize
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
       - name: Upload monitoring report
         uses: actions/upload-artifact@v4
         with:
@@ -42,11 +47,11 @@ jobs:
           script: |
             const title = "Review potential official education data update";
             const body = [
-              "The weekly monitor found a source header that may be newer than the current site content date.",
+              "${{ steps.check.outputs.summary }}",
               "",
-              "Review the uploaded `official-data-check` artifact, verify the official files manually, then update the typed data files if needed.",
+              "Review the uploaded `official-data-check` artifact. If the changed links are relevant, run `npm run data:update`, `npm run test`, and `npm run build` before publishing new data.",
               "",
-              "This workflow uses polite source checks and does not scrape aggressively."
+              "The workflow does not auto-publish new data."
             ].join("\n");
             await github.rest.issues.create({
               owner: context.repo.owner,

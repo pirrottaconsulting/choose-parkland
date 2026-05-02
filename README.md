@@ -1,33 +1,73 @@
 # Choose Parkland
 
-Choose Parkland is a modern, public-facing comparison site for families evaluating Parkland School District alongside charter, cyber charter, private, and alternative education options.
+Choose Parkland is a public, data-driven comparison site for families evaluating Parkland School District alongside charter, cyber charter, private, and alternative education options.
 
-The editorial stance is calm and factual: compare the options, understand the tradeoffs, and see what Parkland offers before deciding. It is not an attack site.
+The site downloads official public files, parses them into normalized JSON, generates parent-friendly comparison content, and ships that data inside the static build.
 
 ## Stack
 
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Static export ready for S3 + CloudFront
-- Weekly GitHub Actions source monitor
+- Static export for S3 + CloudFront
+- XLSX parsing for official Excel workbooks
+- Weekly GitHub Actions source monitoring
 
 ## Local Setup
 
 ```bash
 npm install
+npm run data:update
 npm run dev
 ```
 
 Open `http://localhost:3000`.
 
-Production build:
+## Data Pipeline
+
+Required pipeline commands:
 
 ```bash
-npm run build
+npm run data:download
+npm run data:parse
+npm run data:generate
+npm run data:update
 ```
 
-Static files are emitted to `out/` because `next.config.ts` uses `output: "export"`.
+`npm run data:update` downloads official source files, parses them, and writes normalized JSON to `src/data/generated`.
+
+Generated static data:
+
+- `src/data/generated/source-manifest.json`
+- `src/data/generated/entities.json`
+- `src/data/generated/pssa-metrics.json`
+- `src/data/generated/keystone-metrics.json`
+- `src/data/generated/future-ready-metrics.json`
+- `src/data/generated/all-metrics.json`
+- `src/data/generated/comparison-content.json`
+
+Each generated metric includes:
+
+- source URL
+- source name
+- source id
+- retrieval date through the manifest
+- school year
+- entity id/name
+- metric category and value
+
+## Official Sources
+
+Current source targets:
+
+- PDE Assessment Reporting: `https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting`
+- 2025 PDE PSSA school, district, and state Excel files
+- 2025 PDE Keystone school and district Excel files
+- Future Ready PA Data Files: `https://futurereadypa.org/Home/DataFiles`
+- Future Ready Performance Data for SY 2024-2025
+- Future Ready School Fast Facts for SY 2024-2025
+- Future Ready District Fast Facts for SY 2024-2025
+- Parkland Virtual Academy public program page
 
 ## Pages
 
@@ -39,95 +79,54 @@ Static files are emitted to `out/` because `next.config.ts` uses `output: "expor
 - `/parkland-virtual-academy`
 - `/circle-of-seasons-vs-parkland`
 
-## Data Architecture
-
-Typed data lives in `src/data`:
-
-- `schools.ts`
-- `districts.ts`
-- `comparisonCriteria.ts`
-- `sourceDocuments.ts`
-- `pssaResults.ts`
-- `futureReadyMetrics.ts`
-- `lastUpdated.ts`
-- `claims.ts`
-
-Every claim and comparison module carries `sourceIds`. Pages render source labels and links from `sourceDocuments.ts`. Placeholder records are marked as placeholder or needs-verification so unsupported claims do not appear as established facts.
-
-Current official source targets:
-
-- Pennsylvania Department of Education Assessment Reporting page for PSSA and Keystone files
-- Future Ready PA Index Data Files page
-- Data.gov PSSA and Keystone Performance dataset
-
-## Data Update Workflow
-
-Weekly monitoring is defined in `.github/workflows/check-official-data.yml`.
-
-Run locally:
+## Quality Checks
 
 ```bash
-npm run data:check
-```
-
-The script:
-
-- Checks official data source URLs with polite single HEAD requests.
-- Writes `reports/official-data-check.json`.
-- Flags a potential update when response headers appear newer than the current site content date.
-- Leaves parsing and ingestion as a future human-reviewed step.
-
-Future ingestion should download only changed official files, parse workbook rows, validate entity matches, and update typed data records after review.
-
-## Future AI Monitoring
-
-Scaffolds are included:
-
-- `scripts/monitor-official-sources.ts`
-- `scripts/summarize-data-changes.ts`
-
-`npm run data:summarize` checks for `OPENAI_API_KEY`. If no key exists, it gracefully skips AI summarization. API integration is intentionally not connected yet.
-
-Future behavior: summarize official source diffs, identify affected pages, and flag claims or comparison modules that need updates.
-
-## AWS Static Hosting
-
-Build the static site:
-
-```bash
+npm run lint
+npm run test
 npm run build
 ```
 
-Deploy `out/` to S3:
+The test suite checks generated data presence, citations, required entities, page content, and weak-language guardrails.
+
+## Weekly Monitoring
+
+`.github/workflows/check-official-data.yml` checks official source pages weekly for changed Excel links or file names. If the source inventory changes, it opens a GitHub issue with a deterministic summary. If `OPENAI_API_KEY` exists, the workflow can run the summarizer step, but no data is inferred or published from AI output.
+
+New data should be published only after:
 
 ```bash
-aws s3 sync out/ s3://YOUR_BUCKET_NAME --delete
+npm run data:update
+npm run test
+npm run build
 ```
 
-This repo also includes a helper script for a private S3 bucket behind CloudFront:
+## AWS Static Hosting
+
+Build and deploy to the existing private S3 bucket and CloudFront distribution:
 
 ```bash
 ./scripts/deploy-aws-static.sh
 ```
 
-Recommended CloudFront setup:
+Existing AWS resources:
 
-- S3 bucket with static website hosting or private bucket behind Origin Access Control.
-- CloudFront distribution pointing to the bucket origin.
-- Default root object: `index.html`.
-- Error response mapping for static routes if needed: 403/404 to `/404.html`.
-- Cache invalidation after deploy:
+- Bucket: `choose-parkland-796973506838-us-east-1`
+- CloudFront distribution: `EBZD2LFK239KT`
+
+Manual deploy:
 
 ```bash
-aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+npm run build
+aws s3 sync out/ s3://choose-parkland-796973506838-us-east-1 --delete
+aws cloudfront create-invalidation --distribution-id EBZD2LFK239KT --paths "/*"
 ```
-
-No custom domain is required for the initial deployment.
 
 ## Content Rules
 
 - Do not say charter schools are bad.
 - Do not shame parents.
 - Do not make unsupported factual claims.
-- Use source labels and latest-available-data language.
-- Verify program-specific information with each school before publishing definitive comparisons.
+- Use latest official data available.
+- Say when data is not available in the current official file.
+- Say when data is not directly comparable based on public data.

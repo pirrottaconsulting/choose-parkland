@@ -1,16 +1,14 @@
-import { sourceDocuments } from "../src/data/sourceDocuments.ts";
+import { officialSources } from "./data-utils.ts";
 
 async function main() {
   console.log("Monitoring official education data sources.");
-  console.log("This scaffold intentionally performs no aggressive scraping.");
+  console.log("The monitor checks source pages for changed Excel links and file names.");
 
-  for (const source of sourceDocuments.filter((item) => item.kind === "official-data")) {
-    console.log(`Queued source for future monitor: ${source.label} (${source.url})`);
+  for (const source of officialSources.filter((item) => item.category !== "program")) {
+    console.log(`Queued source for monitor: ${source.name} (${source.url})`);
   }
 
-  console.log(
-    "Future implementation: compare known file inventories, download only changed files, and hand parsed rows to the data validation layer.",
-  );
+  console.log("Run npm run data:update to download, parse, generate, test, and build before publishing new data.");
 }
 
 main().catch((error) => {

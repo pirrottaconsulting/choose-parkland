@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { ClaimBlock } from "@/components/ClaimBlock";
-import { DataCallouts } from "@/components/DataCallouts";
+import { ComparisonExplorer } from "@/components/ComparisonExplorer";
+import { DataTable } from "@/components/DataTable";
+import { MetricCard } from "@/components/MetricCard";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
-import { SourceNote } from "@/components/SourceNote";
+import { allMetrics } from "@/lib/generated";
 
 export const metadata: Metadata = {
   title: "Parkland Virtual Academy",
@@ -12,39 +13,40 @@ export const metadata: Metadata = {
 };
 
 export default function VirtualAcademyPage() {
+  const pvaMetrics = allMetrics.filter((metric) => metric.entityId === "parkland-virtual-academy");
+
   return (
     <>
       <PageHero
         eyebrow="Parkland Virtual Academy"
-        title="Flexibility without leaving the district conversation."
-        description="For families considering online learning, the key comparison is not only location. It is access to teachers, support, activities, community, services, and accountable public data."
+        title="Flexibility without leaving the district connection."
+        description="Parkland Virtual Academy belongs in the cyber charter comparison because families should weigh online flexibility, district resources, activities, support, and accountability together."
         primaryLabel="Compare with cyber charter"
         primaryHref="/parkland-vs-cyber-charter"
       />
       <Section
-        eyebrow="What to verify"
-        title="Questions for Parkland Virtual Academy and any cyber charter option."
-        description="Current program details should be verified directly with Parkland and each alternative school before a family makes an enrollment decision."
+        eyebrow="Program data"
+        title="What Parkland publishes about the virtual option."
+        description="Program facts are drawn from Parkland's public Virtual Academy page and displayed alongside official state data for Parkland and cyber charter schools."
       >
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {[
-            "Course staffing and delivery model",
-            "Access to district services and counseling",
-            "Eligibility for activities and local programs",
-            "Progress monitoring and family communication",
-          ].map((item) => (
-            <div key={item} className="rounded-lg border border-slate-200 bg-white p-5 font-semibold text-slate-800 shadow-sm">
-              {item}
-            </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          {pvaMetrics.map((metric) => (
+            <MetricCard key={metric.id} metric={metric} />
           ))}
         </div>
-        <SourceNote sourceIds={["parkland-virtual-academy"]} />
       </Section>
-      <Section tone="soft" title="Latest official data context">
-        <DataCallouts />
+      <Section
+        tone="soft"
+        eyebrow="Cyber charter comparison"
+        title="Compare flexibility with academics, support, and accountability."
+      >
+        <ComparisonExplorer limit={15} />
       </Section>
-      <Section title="Source-connected note">
-        <ClaimBlock claimId="pva-flexibility" />
+      <Section
+        title="Visible data table"
+        description="Cyber charter and Parkland rows come from Future Ready fast facts, performance data, PDE assessments, and Parkland's public program page."
+      >
+        <DataTable entityIds={["parkland-school-district", "parkland-virtual-academy", "commonwealth-charter-academy-cs", "agora-cyber-cs", "21st-century-cyber-cs"]} />
       </Section>
     </>
   );

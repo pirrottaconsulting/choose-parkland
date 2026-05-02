@@ -8,14 +8,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "data:download": "node --experimental-strip-types scripts/download-official-data.ts",
+    "data:parse": "node --experimental-strip-types scripts/parse-pssa.ts && node --experimental-strip-types scripts/parse-keystone.ts && node --experimental-strip-types scripts/parse-future-ready.ts",
+    "data:generate": "node --experimental-strip-types scripts/generate-comparison-content.ts",
+    "data:update": "npm run data:download && npm run data:parse && npm run data:generate",
     "data:check": "node --experimental-strip-types scripts/check-official-data.ts",
     "data:monitor": "node --experimental-strip-types scripts/monitor-official-sources.ts",
-    "data:summarize": "node --experimental-strip-types scripts/summarize-data-changes.ts"
+    "data:summarize": "node --experimental-strip-types scripts/summarize-data-changes.ts",
+    "test": "node --experimental-strip-types tests/data-site.test.ts"
   },
   "dependencies": {
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

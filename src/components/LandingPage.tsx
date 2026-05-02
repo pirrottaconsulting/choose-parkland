@@ -1,53 +1,96 @@
-import { ClaimBlock } from "@/components/ClaimBlock";
-import { ComparisonTable } from "@/components/ComparisonTable";
+import { ComparisonExplorer } from "@/components/ComparisonExplorer";
+import { DataTable } from "@/components/DataTable";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
-import { SourceNote } from "@/components/SourceNote";
+import { TrendChart } from "@/components/TrendChart";
+import { pageBySlug } from "@/lib/generated";
 
 type LandingPageProps = {
+  slug: string;
   eyebrow: string;
   title: string;
   description: string;
-  focusPoints: string[];
-  claimId?: string;
-  sourceIds: string[];
+  entityIds?: string[];
 };
 
-export function LandingPage({
-  eyebrow,
-  title,
-  description,
-  focusPoints,
-  claimId = "public-official-data",
-  sourceIds,
-}: LandingPageProps) {
+export function LandingPage({ slug, eyebrow, title, description, entityIds }: LandingPageProps) {
+  const content = pageBySlug(slug);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What should families compare before choosing a school option?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Families should compare official data, services, flexibility, accountability, activities, and district connection before deciding.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this comparison anti-charter?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The site is a data-first parent decision tool that compares district, charter, cyber charter, and alternative options without shaming families.",
+        },
+      },
+    ],
+  };
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: title,
+    itemListElement: (entityIds ?? ["parkland-school-district", "circle-of-seasons-charter-school"]).map((id, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: id.replace(/-/g, " "),
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, itemListSchema]) }}
+      />
       <PageHero eyebrow={eyebrow} title={title} description={description} />
       <Section
-        eyebrow="Decision pathway"
-        title="What to compare before enrolling."
-        description="Use these prompts to understand fit, flexibility, services, published data, and accountability."
+        eyebrow="What the official data shows"
+        title={content?.sections[0]?.heading ?? "What the official data shows"}
+        description={content?.sections[0]?.body}
       >
-        <div className="grid gap-4 md:grid-cols-2">
-          {focusPoints.map((point) => (
-            <div key={point} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-base font-semibold leading-7 text-slate-800">{point}</p>
-            </div>
-          ))}
-        </div>
-        <SourceNote sourceIds={sourceIds} />
+        <DataTable entityIds={entityIds} />
       </Section>
       <Section
         tone="soft"
-        eyebrow="Comparison framework"
-        title="Parkland vs other options."
-        description="The table is built for official rows and verified program facts as they are ingested."
+        eyebrow="Interactive comparison"
+        title="Filter by parent decision category."
+        description="Review academics, flexibility, support, activities, accountability, and community connection using the imported source-backed metrics."
       >
-        <ComparisonTable />
+        <ComparisonExplorer limit={12} />
       </Section>
-      <Section title="Source and update note">
-        <ClaimBlock claimId={claimId} />
+      <Section
+        eyebrow="Trend view"
+        title="How to read changes over time."
+        description="Trend charts appear when multiple comparable years are imported. When only the current official year is present, the site says so directly."
+      >
+        <TrendChart entityId="parkland-school-district" subject="English Language Arts" />
+      </Section>
+      <Section tone="soft" title={content?.sections[1]?.heading ?? "What parents should ask"}>
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            content?.sections[1]?.body,
+            "Compare the data, services, flexibility, accountability, activities, and district connection before deciding.",
+            content?.sections[2]?.body,
+          ]
+            .filter(Boolean)
+            .map((item) => (
+              <div key={item} className="rounded-lg border border-slate-200 bg-white p-5 text-sm font-semibold leading-6 text-slate-800 shadow-sm">
+                {item}
+              </div>
+            ))}
+        </div>
       </Section>
     </>
   );

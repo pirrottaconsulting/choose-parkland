@@ -10,17 +10,11 @@ export const metadata: Metadata = {
 export default function CircleOfSeasonsPage() {
   return (
     <LandingPage
+      slug="circle-of-seasons-vs-parkland"
       eyebrow="Circle of Seasons vs Parkland"
-      title="Compare Circle of Seasons and Parkland with verified data, not assumptions."
-      description="This page is structured for a fair comparison. Current content uses placeholder source records until official performance rows and verified program details are ingested."
-      focusPoints={[
-        "Check official PDE and Future Ready PA data for both schools when the latest rows are ingested.",
-        "Verify Circle of Seasons program details directly with the school before making claims.",
-        "Compare the learning model, activities, support services, and family communication expectations.",
-        "Use this page as a parent decision tool, not as criticism of any school option.",
-      ]}
-      claimId="circle-placeholder"
-      sourceIds={["circle-of-seasons-public-info", "future-ready-data-files", "pde-assessment-reporting"]}
+      title="Compare Circle of Seasons and Parkland with official data, not assumptions."
+      description="Circle of Seasons and Parkland both appear in public data files. This page shows what is directly comparable and where a district-to-single-school comparison needs context."
+      entityIds={["parkland-school-district", "circle-of-seasons-charter-school"]}
     />
   );
 }

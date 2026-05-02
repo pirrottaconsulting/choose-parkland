@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { lastUpdated, sourceDocuments } from "@/data";
+import { sourceManifest } from "@/lib/generated";
 
 export function Footer() {
   return (
@@ -12,12 +12,12 @@ export function Footer() {
             Performance data is updated when official state sources publish new files.
           </p>
           <p className="mt-3 text-xs text-slate-500">
-            Site content last updated: {lastUpdated.siteContent}. {lastUpdated.disclaimer}
+            Static data generated from official source files. Some metrics may be not directly comparable based on public data.
           </p>
         </div>
         <div className="grid gap-2">
           <p className="font-semibold text-slate-950">Official source targets</p>
-          {sourceDocuments.slice(0, 3).map((source) => (
+          {sourceManifest.slice(0, 4).map((source) => (
             <a
               key={source.id}
               href={source.url}
@@ -25,7 +25,7 @@ export function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              {source.label}
+              {source.name}
             </a>
           ))}
           <Link href="/compare" className="mt-2 font-semibold text-[#0f766e]">

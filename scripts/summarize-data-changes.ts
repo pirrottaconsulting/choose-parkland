@@ -18,10 +18,8 @@ async function main() {
     return;
   }
 
-  console.log("OPENAI_API_KEY detected, but API integration is intentionally not wired yet.");
-  console.log(
-    "Future implementation: submit the official-source diff to an OpenAI model and write a human-review summary.",
-  );
+  console.log("OPENAI_API_KEY detected. Deterministic summary remains the source of truth for changed links.");
+  console.log("OpenAI summarization is disabled until an approved API client is added; no data is inferred.");
   console.log(`Report bytes available for future summarization: ${report.length}`);
 }
 

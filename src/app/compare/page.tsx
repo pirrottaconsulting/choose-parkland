@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { ClaimBlock } from "@/components/ClaimBlock";
-import { ComparisonCard } from "@/components/ComparisonCard";
-import { ComparisonTable } from "@/components/ComparisonTable";
-import { DataCallouts } from "@/components/DataCallouts";
+import { ComparisonExplorer } from "@/components/ComparisonExplorer";
+import { DataDashboard } from "@/components/DataDashboard";
+import { DataTable } from "@/components/DataTable";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
-import { comparisonCriteria } from "@/data";
+import { SourceList } from "@/components/SourceList";
 
 export const metadata: Metadata = {
   title: "Compare Parkland with charter, cyber charter, and alternative schools",
@@ -18,28 +17,21 @@ export default function ComparePage() {
     <>
       <PageHero
         eyebrow="Compare options"
-        title="A clearer way to compare education choices near Parkland."
-        description="Use official data where available, ask consistent questions, and understand the tradeoffs before choosing a charter, cyber charter, private, or alternative school."
+        title="Compare education choices near Parkland with imported official data."
+        description="Filter metrics by category, review visible data tables, and use citations to check the official source behind each number."
         primaryLabel="See the data"
       />
-      <Section
-        eyebrow="Comparison modules"
-        title="Start with the questions that change a family decision."
-      >
-        <div className="grid gap-5 lg:grid-cols-2">
-          {comparisonCriteria.map((criterion) => (
-            <ComparisonCard key={criterion.id} criterion={criterion} />
-          ))}
-        </div>
+      <Section eyebrow="Dashboard" title="Latest official data available in this build.">
+        <DataDashboard />
       </Section>
-      <Section tone="soft" eyebrow="Latest official data" title="Data readiness">
-        <DataCallouts />
+      <Section tone="soft" eyebrow="Filters" title="Choose a comparison category.">
+        <ComparisonExplorer limit={24} />
       </Section>
-      <Section title="Side-by-side comparison table">
-        <ComparisonTable />
+      <Section title="Visible comparison table">
+        <DataTable />
       </Section>
-      <Section tone="soft" title="Disclaimers">
-        <ClaimBlock claimId="public-official-data" />
+      <Section tone="soft" title="Citations">
+        <SourceList />
       </Section>
     </>
   );

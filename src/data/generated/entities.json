@@ -1,0 +1,901 @@
+{
+  "generatedAt": "2026-05-02T13:30:59.305Z",
+  "entities": [
+    {
+      "id": "parkland-school-district",
+      "name": "Parkland School District",
+      "type": "district",
+      "category": "Public school district",
+      "aun": "121395103",
+      "enrollment": 10040,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "https://www.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-district-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "District enrollment",
+          "value": "10040",
+          "sourceId": "future-ready-district-fast-facts-2024-2025"
+        },
+        {
+          "label": "Number of schools",
+          "value": "12",
+          "sourceId": "future-ready-district-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-district-fast-facts-2024-2025"
+        },
+        {
+          "label": "Charter school enrollment",
+          "value": "418",
+          "sourceId": "future-ready-district-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "cetronia-sch",
+      "name": "Cetronia Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "2824",
+      "enrollment": 497,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://cetronia.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "497",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "31.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "12.3%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "circle-of-seasons-charter-school",
+      "name": "Circle of Seasons CS",
+      "type": "school",
+      "category": "Charter school",
+      "aun": "121394017",
+      "schoolNumber": "8262",
+      "enrollment": 433,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8",
+      "website": "http://www.circleofseasons.org",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "433",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "24.3%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "19.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "fogelsville-sch",
+      "name": "Fogelsville Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "4672",
+      "enrollment": 481,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://fogelsville.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "481",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "28.5%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "15.8%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "fred-j-jaindl-el-sch",
+      "name": "Fred J. Jaindl El Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "8141",
+      "enrollment": 433,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://jaindl.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "433",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "27.9%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "18.5%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "ironton-sch",
+      "name": "Ironton Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "2823",
+      "enrollment": 417,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://ironton.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "417",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "30.0%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "19.7%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "kernsville-sch",
+      "name": "Kernsville Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "6801",
+      "enrollment": 523,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://kernsville.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "523",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "24.7%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "19.3%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "kratzer-sch",
+      "name": "Kratzer Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "2827",
+      "enrollment": 510,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://kratzer.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "510",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "48.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "18.0%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "orefield-ms",
+      "name": "Orefield MS",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "7604",
+      "enrollment": 1034,
+      "grades": "6, 7, 8",
+      "website": "https://oms.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "1034",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "6, 7, 8",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "34.7%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "21.8%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "parkland-high-school",
+      "name": "Parkland HS",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "2829",
+      "enrollment": 3290,
+      "grades": "9, 10, 11, 12",
+      "website": "https://phs.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "3290",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "35.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "16.4%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "parkway-manor-sch",
+      "name": "Parkway Manor Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "2826",
+      "enrollment": 569,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://parkwaymanor.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "569",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "25.7%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "17.2%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "schnecksville-sch",
+      "name": "Schnecksville Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "2825",
+      "enrollment": 479,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://schnecksville.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "479",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "37.2%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "19.2%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "springhouse-ms",
+      "name": "Springhouse MS",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "7603",
+      "enrollment": 1329,
+      "grades": "6, 7, 8",
+      "website": "https://sms.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "1329",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "6, 7, 8",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "28.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "15.0%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "veterans-memorial-el-sch",
+      "name": "Veterans Memorial El Sch",
+      "type": "school",
+      "category": "District school",
+      "aun": "121395103",
+      "schoolNumber": "8474",
+      "enrollment": 457,
+      "grades": "K5F, 1, 2, 3, 4, 5",
+      "website": "https://veterans.parklandsd.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "457",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "32.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "19.7%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "DFLT",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "21st-century-cyber-cs",
+      "name": "21st Century Cyber CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "124150002",
+      "schoolNumber": "7691",
+      "enrollment": 996,
+      "grades": "6, 7, 8, 9, 10, 11, 12",
+      "website": "http://www.21cccs.org",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "996",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "7.1%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "23.4%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "ATSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "achievement-house-cs",
+      "name": "Achievement House CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "125230001",
+      "schoolNumber": "7824",
+      "enrollment": 927,
+      "grades": "7, 8, 9, 10, 11, 12",
+      "website": "http://www.achievementcharter.com",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "927",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "63.5%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "40.2%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "agora-cyber-cs",
+      "name": "Agora Cyber CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "126510020",
+      "schoolNumber": "7858",
+      "enrollment": 4156,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "http://www.agora.org",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "4156",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "45.0%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "36.9%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "aspira-bilingual-cyber-cs",
+      "name": "ASPIRA Bilingual Cyber CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "181519176",
+      "schoolNumber": "8148",
+      "enrollment": 1038,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "https://www.abccs.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "1038",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "80.5%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "43.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "central-pa-digital-lrng-foundation-cs",
+      "name": "Central PA Digital Lrng Foundation CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "108070001",
+      "schoolNumber": "7720",
+      "enrollment": 194,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "http://www.cpdlf.org",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "194",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "70.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "28.4%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "commonwealth-charter-academy-cs",
+      "name": "Commonwealth Charter Academy CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "115220002",
+      "schoolNumber": "7774",
+      "enrollment": 29325,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "http://www.ccaeducate.me",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "29325",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "67.5%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "30.8%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "esperanza-cyber-cs",
+      "name": "Esperanza Cyber CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "126511563",
+      "schoolNumber": "8216",
+      "enrollment": 979,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "http://esperanzacybercs.org/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "979",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "96.6%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "17.7%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "insight-pa-cyber-cs",
+      "name": "Insight PA Cyber CS",
+      "type": "cyber",
+      "category": "Cyber charter school",
+      "aun": "124152637",
+      "schoolNumber": "8394",
+      "enrollment": 3385,
+      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "https://insightpa.k12.com/",
+      "sourceIds": [
+        "future-ready-school-fast-facts-2024-2025"
+      ],
+      "facts": [
+        {
+          "label": "Enrollment",
+          "value": "3385",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Grades offered",
+          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Economically disadvantaged",
+          "value": "59.3%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "Special education",
+          "value": "25.4%",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        },
+        {
+          "label": "ESSA designation",
+          "value": "CSI",
+          "sourceId": "future-ready-school-fast-facts-2024-2025"
+        }
+      ]
+    }
+  ]
+}
