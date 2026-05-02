@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T13:51:55.176Z",
+  "generatedAt": "2026-05-02T19:34:23.802Z",
   "entities": [
     {
       "id": "parkland-school-district",
@@ -611,47 +611,6 @@
       ]
     },
     {
-      "id": "achievement-house-cs",
-      "name": "Achievement House CS",
-      "type": "cyber",
-      "category": "Cyber charter school",
-      "aun": "125230001",
-      "schoolNumber": "7824",
-      "enrollment": 927,
-      "grades": "7, 8, 9, 10, 11, 12",
-      "website": "http://www.achievementcharter.com",
-      "sourceIds": [
-        "future-ready-school-fast-facts-2024-2025"
-      ],
-      "facts": [
-        {
-          "label": "Enrollment",
-          "value": "927",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Grades offered",
-          "value": "7, 8, 9, 10, 11, 12",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Economically disadvantaged",
-          "value": "63.5%",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Special education",
-          "value": "40.2%",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "ESSA designation",
-          "value": "CSI",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        }
-      ]
-    },
-    {
       "id": "agora-cyber-cs",
       "name": "Agora Cyber CS",
       "type": "cyber",
@@ -683,88 +642,6 @@
         {
           "label": "Special education",
           "value": "36.9%",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "ESSA designation",
-          "value": "CSI",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        }
-      ]
-    },
-    {
-      "id": "aspira-bilingual-cyber-cs",
-      "name": "ASPIRA Bilingual Cyber CS",
-      "type": "cyber",
-      "category": "Cyber charter school",
-      "aun": "181519176",
-      "schoolNumber": "8148",
-      "enrollment": 1038,
-      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
-      "website": "https://www.abccs.org/",
-      "sourceIds": [
-        "future-ready-school-fast-facts-2024-2025"
-      ],
-      "facts": [
-        {
-          "label": "Enrollment",
-          "value": "1038",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Grades offered",
-          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Economically disadvantaged",
-          "value": "80.5%",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Special education",
-          "value": "43.6%",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "ESSA designation",
-          "value": "CSI",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        }
-      ]
-    },
-    {
-      "id": "central-pa-digital-lrng-foundation-cs",
-      "name": "Central PA Digital Lrng Foundation CS",
-      "type": "cyber",
-      "category": "Cyber charter school",
-      "aun": "108070001",
-      "schoolNumber": "7720",
-      "enrollment": 194,
-      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
-      "website": "http://www.cpdlf.org",
-      "sourceIds": [
-        "future-ready-school-fast-facts-2024-2025"
-      ],
-      "facts": [
-        {
-          "label": "Enrollment",
-          "value": "194",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Grades offered",
-          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Economically disadvantaged",
-          "value": "70.6%",
-          "sourceId": "future-ready-school-fast-facts-2024-2025"
-        },
-        {
-          "label": "Special education",
-          "value": "28.4%",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
@@ -816,37 +693,37 @@
       ]
     },
     {
-      "id": "esperanza-cyber-cs",
-      "name": "Esperanza Cyber CS",
+      "id": "pa-cyber-cs",
+      "name": "Pennsylvania Cyber CS",
       "type": "cyber",
       "category": "Cyber charter school",
-      "aun": "126511563",
-      "schoolNumber": "8216",
-      "enrollment": 979,
-      "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
-      "website": "http://esperanzacybercs.org/",
+      "aun": "127043430",
+      "schoolNumber": "7650",
+      "enrollment": 10180,
+      "grades": "K4F, K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+      "website": "http://www.pacyber.org",
       "sourceIds": [
         "future-ready-school-fast-facts-2024-2025"
       ],
       "facts": [
         {
           "label": "Enrollment",
-          "value": "979",
+          "value": "10180",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
           "label": "Grades offered",
-          "value": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "value": "K4F, K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
           "label": "Economically disadvantaged",
-          "value": "96.6%",
+          "value": "39.3%",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
           "label": "Special education",
-          "value": "17.7%",
+          "value": "27.4%",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
@@ -857,22 +734,22 @@
       ]
     },
     {
-      "id": "insight-pa-cyber-cs",
-      "name": "Insight PA Cyber CS",
+      "id": "pa-virtual-cs",
+      "name": "Pennsylvania Virtual CS",
       "type": "cyber",
       "category": "Cyber charter school",
-      "aun": "124152637",
-      "schoolNumber": "8394",
-      "enrollment": 3385,
+      "aun": "123460001",
+      "schoolNumber": "7687",
+      "enrollment": 2772,
       "grades": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
-      "website": "https://insightpa.k12.com/",
+      "website": "http://pavcsk12.org",
       "sourceIds": [
         "future-ready-school-fast-facts-2024-2025"
       ],
       "facts": [
         {
           "label": "Enrollment",
-          "value": "3385",
+          "value": "2772",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
@@ -882,17 +759,17 @@
         },
         {
           "label": "Economically disadvantaged",
-          "value": "59.3%",
+          "value": "64.9%",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
           "label": "Special education",
-          "value": "25.4%",
+          "value": "21.7%",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         },
         {
           "label": "ESSA designation",
-          "value": "CSI",
+          "value": "TSI",
           "sourceId": "future-ready-school-fast-facts-2024-2025"
         }
       ]

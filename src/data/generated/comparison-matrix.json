@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T13:52:26.086Z",
+  "generatedAt": "2026-05-02T19:34:24.359Z",
   "categories": [
     "Academics",
     "Flexibility",
@@ -426,31 +426,34 @@
           "schoolYear": "Latest official data available"
         },
         "commonwealth-charter-academy-cs": {
-          "displayValue": "9.1%",
-          "rawValue": 9.1,
+          "displayValue": "37.3%",
+          "rawValue": 37.3,
           "status": "available",
-          "sourceId": "future-ready-performance-2024-2025",
-          "sourceName": "Future Ready Performance Data for SY 2024-2025",
-          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
-          "schoolYear": "2024-2025"
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
         },
         "agora-cyber-cs": {
-          "displayValue": "20.5%",
-          "rawValue": 20.5,
+          "displayValue": "20.4%",
+          "rawValue": 20.4,
           "status": "available",
-          "sourceId": "future-ready-performance-2024-2025",
-          "sourceName": "Future Ready Performance Data for SY 2024-2025",
-          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
-          "schoolYear": "2024-2025"
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
         },
         "21st-century-cyber-cs": {
-          "displayValue": "44.0%",
-          "rawValue": 44,
+          "displayValue": "46.2%",
+          "rawValue": 46.2,
           "status": "available",
-          "sourceId": "future-ready-performance-2024-2025",
-          "sourceName": "Future Ready Performance Data for SY 2024-2025",
-          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
-          "schoolYear": "2024-2025"
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
         },
         "pa-state": {
           "displayValue": "48.6%",
@@ -498,31 +501,34 @@
           "schoolYear": "Latest official data available"
         },
         "commonwealth-charter-academy-cs": {
-          "displayValue": "4.2%",
-          "rawValue": 4.2,
+          "displayValue": "15.8%",
+          "rawValue": 15.8,
           "status": "available",
-          "sourceId": "future-ready-performance-2024-2025",
-          "sourceName": "Future Ready Performance Data for SY 2024-2025",
-          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
-          "schoolYear": "2024-2025"
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
         },
         "agora-cyber-cs": {
-          "displayValue": "6.4%",
-          "rawValue": 6.4,
+          "displayValue": "6.6%",
+          "rawValue": 6.6,
           "status": "available",
-          "sourceId": "future-ready-performance-2024-2025",
-          "sourceName": "Future Ready Performance Data for SY 2024-2025",
-          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
-          "schoolYear": "2024-2025"
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
         },
         "21st-century-cyber-cs": {
-          "displayValue": "22.1%",
-          "rawValue": 22.1,
+          "displayValue": "21.9%",
+          "rawValue": 21.9,
           "status": "available",
-          "sourceId": "future-ready-performance-2024-2025",
-          "sourceName": "Future Ready Performance Data for SY 2024-2025",
-          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
-          "schoolYear": "2024-2025"
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
         },
         "pa-state": {
           "displayValue": "Not available in the current official file",

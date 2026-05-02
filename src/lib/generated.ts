@@ -1,7 +1,11 @@
 import allMetricsData from "@/data/generated/all-metrics.json";
 import comparisonContentData from "@/data/generated/comparison-content.json";
 import comparisonMatrixData from "@/data/generated/comparison-matrix.json";
+import comparisonPagesData from "@/data/generated/comparison-pages.json";
+import comparisonRowsData from "@/data/generated/comparison-rows.json";
 import entitiesData from "@/data/generated/entities.json";
+import metricsData from "@/data/generated/metrics.json";
+import sourceDocumentsData from "@/data/generated/source-documents.json";
 import sourceManifestData from "@/data/generated/source-manifest.json";
 
 export type Metric = (typeof allMetricsData.metrics)[number];
@@ -14,6 +18,10 @@ export const entities = entitiesData.entities as Entity[];
 export const sourceManifest = sourceManifestData.sources as Source[];
 export const comparisonContent = comparisonContentData;
 export const comparisonMatrix = comparisonMatrixData;
+export const comparisonRows = comparisonRowsData;
+export const comparisonPages = comparisonPagesData;
+export const metrics = metricsData.metrics as Metric[];
+export const sourceDocuments = sourceDocumentsData.sources as Source[];
 
 export function sourceForMetric(metric: Metric) {
   return sourceManifest.find((source) => source.id === metric.sourceId);

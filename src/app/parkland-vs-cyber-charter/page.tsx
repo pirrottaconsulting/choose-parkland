@@ -4,7 +4,7 @@ import { LandingPage } from "@/components/LandingPage";
 export const metadata: Metadata = {
   title: "Parkland vs Cyber Charter",
   description:
-    "Compare cyber charter options with Parkland Virtual Academy and Parkland School District resources before choosing online learning.",
+    "Compare Parkland and Parkland Virtual Academy with cyber charter options before choosing online learning.",
 };
 
 export default function CyberCharterPage() {
@@ -12,9 +12,9 @@ export default function CyberCharterPage() {
     <LandingPage
       slug="parkland-vs-cyber-charter"
       eyebrow="Parkland vs cyber charter"
-      title="Need online flexibility? Compare cyber charter with a district-connected virtual option."
-      description="Online learning is a serious family decision. Compare cyber charter metrics, support indicators, accountability labels, and Parkland Virtual Academy's district connection before deciding."
-      entityIds={["parkland-school-district", "parkland-virtual-academy", "commonwealth-charter-academy-cs", "agora-cyber-cs", "21st-century-cyber-cs"]}
+      title="Compare Parkland and PVA with cyber charter options."
+      description="Online learning is a serious family decision. Compare graduation rate, Keystone grade 11 results, local support, PVA flexibility, activities, and transition back to in-person Parkland before deciding."
+      entityIds={["parkland-school-district", "commonwealth-charter-academy-cs", "pa-cyber-cs", "agora-cyber-cs"]}
     />
   );
 }

@@ -4,8 +4,17 @@ import type { EntityRecord, MetricRecord } from "./data-utils.ts";
 
 const PARKLAND_AUN = "121395103";
 const CIRCLE_AUN = "121394017";
+const CYBER_AUNS = new Set(["115220002", "126510020", "127043430", "123460001", "124150002"]);
 
-const cyberLimit = 8;
+const knownEntityIds: Record<string, string> = {
+  "21st Century Cyber CS": "21st-century-cyber-cs",
+  "Agora Cyber CS": "agora-cyber-cs",
+  "Commonwealth Charter Academy CS": "commonwealth-charter-academy-cs",
+  "Pennsylvania Cyber CS": "pa-cyber-cs",
+  "Pennsylvania Virtual CS": "pa-virtual-cs",
+  "Circle of Seasons CS": "circle-of-seasons-charter-school",
+  "Parkland HS": "parkland-high-school",
+};
 
 function entityFromDistrict(row: Record<string, unknown>): EntityRecord {
   return {
@@ -30,12 +39,7 @@ function entityFromDistrict(row: Record<string, unknown>): EntityRecord {
 function entityFromSchool(row: Record<string, unknown>): EntityRecord {
   const type = clean(row.OrganizationTypeCode) === "cyber" ? "cyber" : clean(row.OrganizationTypeCode) === "charter" ? "school" : "school";
   const name = clean(row.Name);
-  const id =
-    name === "Circle of Seasons CS"
-      ? "circle-of-seasons-charter-school"
-      : name === "Parkland HS"
-        ? "parkland-high-school"
-        : name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const id = knownEntityIds[name] ?? name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
   return {
     id,
@@ -92,11 +96,11 @@ async function main() {
   const relevantSchools = schoolRows.filter((row) => {
     const isParkland = clean(row.AUN) === PARKLAND_AUN;
     const isCircle = clean(row.AUN) === CIRCLE_AUN;
-    const isCyber = clean(row.OrganizationTypeCode) === "cyber";
+    const isCyber = CYBER_AUNS.has(clean(row.AUN));
     return isParkland || isCircle || isCyber;
   });
 
-  const cyberRows = relevantSchools.filter((row) => clean(row.OrganizationTypeCode) === "cyber").slice(0, cyberLimit);
+  const cyberRows = relevantSchools.filter((row) => CYBER_AUNS.has(clean(row.AUN)));
   const entities = [
     entityFromDistrict(parklandDistrict),
     ...relevantSchools

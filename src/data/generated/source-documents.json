@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T19:34:24.360Z",
+  "generatedAt": "2026-05-02T19:34:24.663Z",
   "sources": [
     {
       "id": "pde-2025-pssa-district",
@@ -9,7 +9,7 @@
       "category": "pssa",
       "level": "district",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:50.564Z",
       "bytes": 4808196
     },
@@ -21,7 +21,7 @@
       "category": "pssa",
       "level": "school",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:51.564Z",
       "bytes": 17988831
     },
@@ -33,7 +33,7 @@
       "category": "pssa",
       "level": "state",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:52.106Z",
       "bytes": 26210
     },
@@ -45,7 +45,7 @@
       "category": "keystone",
       "level": "district",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:52.729Z",
       "bytes": 999563
     },
@@ -57,7 +57,7 @@
       "category": "keystone",
       "level": "state",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:53.357Z",
       "bytes": 15272
     },
@@ -69,7 +69,7 @@
       "category": "keystone",
       "level": "school",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:53.929Z",
       "bytes": 1553737
     },
@@ -81,7 +81,7 @@
       "category": "keystone",
       "level": "district",
       "schoolYear": "2024",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:54.434Z",
       "bytes": 1248461
     },
@@ -93,7 +93,7 @@
       "category": "keystone",
       "level": "school",
       "schoolYear": "2024",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:54.940Z",
       "bytes": 1569492
     },
@@ -105,7 +105,7 @@
       "category": "keystone",
       "level": "district",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:55.446Z",
       "bytes": 236756
     },
@@ -117,7 +117,7 @@
       "category": "future-ready",
       "level": "performance",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:56.563Z",
       "bytes": 5113109
     },
@@ -129,7 +129,7 @@
       "category": "future-ready",
       "level": "school-fast-facts",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:57.153Z",
       "bytes": 683673
     },
@@ -141,7 +141,7 @@
       "category": "future-ready",
       "level": "district-fast-facts",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:57.698Z",
       "bytes": 131584
     },
@@ -152,7 +152,7 @@
       "localPath": "data/raw/program/parkland-virtual-academy.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:58.462Z",
       "bytes": 56148
     },
@@ -163,7 +163,7 @@
       "localPath": "data/raw/program/parkland-homepage.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:33:59.122Z",
       "bytes": 71211
     },
@@ -174,7 +174,7 @@
       "localPath": "data/raw/program/parkland-high-school-profile.pdf",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:00.045Z",
       "bytes": 4613053
     },
@@ -185,7 +185,7 @@
       "localPath": "data/raw/program/parkland-late-activity-bus.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:00.700Z",
       "bytes": 55274
     },
@@ -196,7 +196,7 @@
       "localPath": "data/raw/program/parkland-special-education.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:01.333Z",
       "bytes": 80555
     },
@@ -207,7 +207,7 @@
       "localPath": "data/raw/program/parkland-gifted-education.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:01.936Z",
       "bytes": 59935
     },
@@ -218,7 +218,7 @@
       "localPath": "data/raw/program/parkland-esl-program.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:02.594Z",
       "bytes": 76028
     },
@@ -229,7 +229,7 @@
       "localPath": "data/raw/program/parkland-student-services.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:04.157Z",
       "bytes": 57906
     },
@@ -240,7 +240,7 @@
       "localPath": "data/raw/program/parkland-athletics.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:04.729Z",
       "bytes": 117468
     },
@@ -251,7 +251,7 @@
       "localPath": "data/raw/program/parkland-arts.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:06.677Z",
       "bytes": 83141
     },
@@ -262,7 +262,7 @@
       "localPath": "data/raw/program/circle-of-seasons-homepage.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:07.595Z",
       "bytes": 935582
     },
@@ -273,7 +273,7 @@
       "localPath": "data/raw/program/pde-charter-schools.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:08.618Z",
       "bytes": 254667
     },
@@ -284,7 +284,7 @@
       "localPath": "data/raw/program/pde-cyber-charter-schools.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T19:34:24.350Z",
+      "retrievedAt": "2026-05-02T19:34:24.655Z",
       "fileDate": "2026-05-02T19:34:09.466Z",
       "bytes": 272411
     }

@@ -14,6 +14,10 @@ const requiredGenerated = [
   "all-metrics.json",
   "comparison-content.json",
   "comparison-matrix.json",
+  "source-documents.json",
+  "metrics.json",
+  "comparison-rows.json",
+  "comparison-pages.json",
 ];
 
 const bannedPhrases = [
@@ -73,6 +77,33 @@ for (const row of comparisonMatrix.rows) {
   }
 }
 
+const comparisonRows = readJson<{
+  entities: Array<{ id: string; recommended?: boolean; fixed?: boolean }>;
+  pageDefaults: Record<string, string[]>;
+  rows: Array<{
+    id: string;
+    sourceIds: string[];
+    parklandCell: { sourceIds: string[] };
+    comparatorRules: Array<{ entityId: string; cell: { sourceIds: string[] } }>;
+  }>;
+}>(join(generatedDir, "comparison-rows.json"));
+assert.ok(
+  comparisonRows.entities.some((entity) => entity.id === "parkland-school-district" && entity.recommended),
+  "Parkland should be the highlighted recommended comparison entity",
+);
+assert.equal(
+  comparisonRows.pageDefaults.home.includes("parkland-virtual-academy"),
+  false,
+  "PVA should not be treated as a homepage competitor",
+);
+for (const row of comparisonRows.rows) {
+  assert.ok(row.sourceIds.length > 0, `Comparison row missing sourceIds: ${row.id}`);
+  assert.ok(row.parklandCell.sourceIds.length > 0, `Parkland cell missing sourceIds: ${row.id}`);
+  for (const rule of row.comparatorRules) {
+    assert.ok(rule.cell.sourceIds.length > 0, `Comparator cell missing sourceIds: ${row.id}/${rule.entityId}`);
+  }
+}
+
 const pageFiles = [
   "index.html",
   "compare.html",
@@ -90,9 +121,24 @@ for (const file of pageFiles) {
   const html = readFileSync(path, "utf8");
   assert.ok(html.includes("Source:"), `${file} does not include visible source citations`);
   assert.ok(html.includes("%") || html.includes("Enrollment"), `${file} does not include visible real content`);
-  if (file === "index.html" || file === "compare.html") {
-    assert.ok(html.includes("Add comparison"), `${file} does not include the comparison builder`);
+  assert.equal(html.includes("Internal Server Error"), false, `${file} returned an internal error`);
+  if (file === "index.html" || file === "compare.html" || file === "circle-of-seasons-vs-parkland.html" || file === "parkland-vs-cyber-charter.html") {
+    assert.ok(html.includes("ComparisonMatrixHero"), `${file} does not include ComparisonMatrixHero`);
     assert.ok(html.includes("Parkland School District"), `${file} does not show Parkland as the anchor option`);
+    assert.ok(html.includes("Recommended"), `${file} does not visually highlight the Parkland column`);
+  }
+  if (file === "index.html") {
+    assert.ok(html.indexOf("ComparisonMatrixHero") < html.indexOf("Detailed data appendix"), "Homepage matrix should render before the data appendix");
+    const defaultUnavailable = (html.slice(0, html.indexOf("Why these rows matter")).match(/Not available in the current official file|Not publicly available/g) ?? []).length;
+    assert.ok(defaultUnavailable <= 2, "Homepage default matrix has too many not-available states");
+    assert.equal(html.includes("Parkland Virtual Academy</h2>"), false, "PVA should not be a homepage default competitor column");
+  }
+  if (file === "circle-of-seasons-vs-parkland.html") assert.ok(html.includes("K-8"), "Circle page should include K-8 context");
+  if (file === "parkland-vs-cyber-charter.html") assert.ok(html.includes("PVA"), "Cyber charter page should include PVA");
+  if (file === "parkland-virtual-academy.html") {
+    for (const phrase of ["Parkland High School diploma", "Hybrid or fully online", "On-site classroom", "Transition back"]) {
+      assert.ok(html.includes(phrase), `PVA page missing ${phrase}`);
+    }
   }
   assertNoBannedPhrases(path);
 }

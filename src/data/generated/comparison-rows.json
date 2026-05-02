@@ -1,0 +1,2789 @@
+{
+  "generatedAt": "2026-05-02T19:34:24.664Z",
+  "entities": [
+    {
+      "id": "parkland-school-district",
+      "name": "Parkland School District",
+      "shortName": "Parkland",
+      "type": "district",
+      "badge": "Full-service local district",
+      "fixed": true,
+      "recommended": true,
+      "chips": [
+        "In-person K-12",
+        "Parkland Virtual Academy",
+        "Local support",
+        "Activities + athletics",
+        "Official PDE data"
+      ]
+    },
+    {
+      "id": "circle-of-seasons-charter-school",
+      "name": "Circle of Seasons",
+      "shortName": "Circle",
+      "type": "charter",
+      "badge": "Local K-8 charter",
+      "chips": [
+        "K-8",
+        "Public charter",
+        "Waldorf-inspired"
+      ]
+    },
+    {
+      "id": "commonwealth-charter-academy-cs",
+      "name": "Commonwealth Charter Academy",
+      "shortName": "CCA",
+      "type": "cyber",
+      "badge": "Cyber charter",
+      "chips": [
+        "Online model",
+        "K-12 where applicable"
+      ]
+    },
+    {
+      "id": "pa-cyber-cs",
+      "name": "PA Cyber",
+      "shortName": "PA Cyber",
+      "type": "cyber",
+      "badge": "Cyber charter",
+      "chips": [
+        "Online model",
+        "K-12 where applicable"
+      ]
+    },
+    {
+      "id": "agora-cyber-cs",
+      "name": "Agora Cyber",
+      "shortName": "Agora",
+      "type": "cyber",
+      "badge": "Cyber charter",
+      "chips": [
+        "Online model",
+        "K-12 where applicable"
+      ]
+    },
+    {
+      "id": "pa-virtual-cs",
+      "name": "PA Virtual",
+      "shortName": "PA Virtual",
+      "type": "cyber",
+      "badge": "Cyber charter",
+      "chips": [
+        "Online model",
+        "K-12 where applicable"
+      ]
+    },
+    {
+      "id": "21st-century-cyber-cs",
+      "name": "21st Century Cyber",
+      "shortName": "21st Century",
+      "type": "cyber",
+      "badge": "Cyber charter",
+      "chips": [
+        "Online model",
+        "Grades 6-12"
+      ]
+    },
+    {
+      "id": "pa-state",
+      "name": "Pennsylvania statewide",
+      "shortName": "PA statewide",
+      "type": "state",
+      "badge": "State benchmark",
+      "chips": [
+        "Benchmark"
+      ]
+    },
+    {
+      "id": "parkland-virtual-academy",
+      "name": "Parkland Virtual Academy",
+      "shortName": "PVA",
+      "type": "program",
+      "badge": "Parkland online pathway",
+      "fixed": false,
+      "recommended": true,
+      "chips": [
+        "Parkland diploma",
+        "Hybrid/online",
+        "On-site support",
+        "Transition back"
+      ]
+    }
+  ],
+  "pageDefaults": {
+    "home": [
+      "parkland-school-district",
+      "circle-of-seasons-charter-school",
+      "commonwealth-charter-academy-cs",
+      "pa-cyber-cs"
+    ],
+    "compare": [
+      "parkland-school-district",
+      "circle-of-seasons-charter-school",
+      "commonwealth-charter-academy-cs",
+      "pa-cyber-cs"
+    ],
+    "circle-of-seasons-vs-parkland": [
+      "parkland-school-district",
+      "circle-of-seasons-charter-school"
+    ],
+    "parkland-vs-cyber-charter": [
+      "parkland-school-district",
+      "commonwealth-charter-academy-cs",
+      "pa-cyber-cs",
+      "agora-cyber-cs"
+    ],
+    "parkland-virtual-academy": [
+      "parkland-virtual-academy",
+      "commonwealth-charter-academy-cs",
+      "pa-cyber-cs",
+      "agora-cyber-cs"
+    ]
+  },
+  "rows": [
+    {
+      "id": "four-year-graduation-rate",
+      "category": "Outcomes",
+      "priority": 1,
+      "label": "Four-year graduation rate",
+      "parentQuestion": "What share of students graduate in four years?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "95.7%",
+        "detail": "763 graduates in a cohort of 797.",
+        "sourceIds": [
+          "pde-2024-2025-four-year-graduation-rates"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "73.1%",
+            "detail": "3,210 graduates in a cohort of 4,393.",
+            "sourceIds": [
+              "pde-2024-2025-four-year-graduation-rates"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "63.5%",
+            "detail": "971 graduates in a cohort of 1,528.",
+            "sourceIds": [
+              "pde-2024-2025-four-year-graduation-rates"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "57.3%",
+            "detail": "346 graduates in a cohort of 604.",
+            "sourceIds": [
+              "pde-2024-2025-four-year-graduation-rates"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "74.7%",
+            "detail": "174 graduates in a cohort of 233.",
+            "sourceIds": [
+              "pde-2024-2025-four-year-graduation-rates"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "59.8%",
+            "detail": "180 graduates in a cohort of 301.",
+            "sourceIds": [
+              "pde-2024-2025-four-year-graduation-rates"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Use as benchmark separately",
+            "detail": "This row compares entity cohort rates where parsed.",
+            "sourceIds": [
+              "pde-2024-2025-four-year-graduation-rates"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "pde-2024-2025-four-year-graduation-rates"
+      ]
+    },
+    {
+      "id": "keystone-literature",
+      "category": "Outcomes",
+      "priority": 2,
+      "label": "Keystone Literature, grade 11",
+      "parentQuestion": "How do grade 11 Literature results compare?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "79.8%",
+        "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+        "sourceIds": [
+          "pde-2025-keystone-district"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "42.1%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "45.3%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "41.6%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "63.8%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "66.7%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "numeric",
+            "value": "62.1%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-state"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "pde-2025-keystone-district",
+        "pde-2025-keystone-school",
+        "pde-2025-keystone-state"
+      ]
+    },
+    {
+      "id": "keystone-algebra-i",
+      "category": "Outcomes",
+      "priority": 3,
+      "label": "Keystone Algebra I, grade 11",
+      "parentQuestion": "How do grade 11 Algebra I results compare?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "60.1%",
+        "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+        "sourceIds": [
+          "pde-2025-keystone-district"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "16.4%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "18.9%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "10.2%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "25.2%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "31.9%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "numeric",
+            "value": "44.3%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-state"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "pde-2025-keystone-district",
+        "pde-2025-keystone-school",
+        "pde-2025-keystone-state"
+      ]
+    },
+    {
+      "id": "keystone-biology",
+      "category": "Outcomes",
+      "priority": 4,
+      "label": "Keystone Biology, grade 11",
+      "parentQuestion": "How do grade 11 Biology results compare?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "61.7%",
+        "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+        "sourceIds": [
+          "pde-2025-keystone-district"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "23.8%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "24.5%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "33.6%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "37.4%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "48.4%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "numeric",
+            "value": "49.4%",
+            "detail": "Keystone results shown are grade 11 results where reported by PDE.",
+            "sourceIds": [
+              "pde-2025-keystone-state"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "pde-2025-keystone-district",
+        "pde-2025-keystone-school",
+        "pde-2025-keystone-state"
+      ]
+    },
+    {
+      "id": "pssa-ela",
+      "category": "Academics",
+      "priority": 10,
+      "label": "PSSA English Language Arts",
+      "parentQuestion": "What do the latest PSSA English Language Arts results show?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "69.0%",
+        "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+        "sourceIds": [
+          "pde-2025-pssa-district"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "numeric",
+            "value": "64.3%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "37.3%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "32.1%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "20.4%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "34.9%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "46.2%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "numeric",
+            "value": "48.6%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-state"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "pde-2025-pssa-district",
+        "pde-2025-pssa-school",
+        "pde-2025-pssa-state"
+      ]
+    },
+    {
+      "id": "pssa-math",
+      "category": "Academics",
+      "priority": 11,
+      "label": "PSSA Math",
+      "parentQuestion": "What do the latest PSSA Math results show?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "66.6%",
+        "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+        "sourceIds": [
+          "pde-2025-pssa-district"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "numeric",
+            "value": "37.0%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "15.8%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "15.1%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "6.6%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "17.0%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "numeric",
+            "value": "21.9%",
+            "detail": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "not_publicly_available",
+            "value": "Not publicly available",
+            "detail": "The current parsed public files do not include a directly usable value for this option.",
+            "sourceIds": [
+              "pde-2025-pssa-school"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "pde-2025-pssa-district",
+        "pde-2025-pssa-school",
+        "pde-2025-pssa-state"
+      ]
+    },
+    {
+      "id": "k12-continuity",
+      "category": "Community",
+      "priority": 20,
+      "label": "K-12 continuity",
+      "parentQuestion": "Can a student stay in one local district pathway from elementary through high school?",
+      "parklandCell": {
+        "status": "included",
+        "value": "K-12 district pathway",
+        "detail": "Parkland serves elementary, middle, and high school students in one local district pathway.",
+        "sourceIds": [
+          "future-ready-district-fast-facts-2024-2025"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "K-8 only",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "K-12 where applicable",
+            "detail": "K-12 where applicable, but not a Parkland district pathway.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "K-12 where applicable",
+            "detail": "K-12 where applicable, but not a Parkland district pathway.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "K-12 where applicable",
+            "detail": "K-12 where applicable, but not a Parkland district pathway.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "K-12 where applicable",
+            "detail": "K-12 where applicable, but not a Parkland district pathway.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Grades 6-12",
+            "detail": "Future Ready fast facts list grades 6-12 for this school.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "future-ready-district-fast-facts-2024-2025",
+        "circle-of-seasons-homepage",
+        "future-ready-school-fast-facts-2024-2025"
+      ]
+    },
+    {
+      "id": "parkland-diploma-plus-virtual",
+      "category": "Flexibility",
+      "priority": 21,
+      "label": "Parkland diploma plus virtual option",
+      "parentQuestion": "Can a student learn online and still remain on a Parkland diploma path?",
+      "parklandCell": {
+        "status": "strong",
+        "value": "Parkland diploma + PVA",
+        "detail": "PVA page states students graduate with a Parkland High School diploma.",
+        "sourceIds": [
+          "parkland-virtual-academy-page"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Separate school model",
+            "detail": "Separate cyber charter diploma / not Parkland diploma.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Separate school model",
+            "detail": "Separate cyber charter diploma / not Parkland diploma.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Separate school model",
+            "detail": "Separate cyber charter diploma / not Parkland diploma.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Separate school model",
+            "detail": "Separate cyber charter diploma / not Parkland diploma.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Separate school model",
+            "detail": "Separate cyber charter diploma / not Parkland diploma.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-virtual-academy-page",
+        "pde-cyber-charter-schools"
+      ]
+    },
+    {
+      "id": "hybrid-online-flexibility",
+      "category": "Flexibility",
+      "priority": 22,
+      "label": "Hybrid or fully online flexibility",
+      "parentQuestion": "Is online flexibility available without leaving Parkland?",
+      "parklandCell": {
+        "status": "strong",
+        "value": "Hybrid or fully online through PVA",
+        "detail": "PVA page states students can mix in-person and online learning or choose a fully online schedule.",
+        "sourceIds": [
+          "parkland-virtual-academy-page"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Brick-and-mortar K-8 charter",
+            "detail": "Circle of Seasons is a brick-and-mortar K-8 charter based on its public website.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Online model",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Online model",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Online model",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Online model",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Online model",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-virtual-academy-page",
+        "circle-of-seasons-homepage",
+        "pde-cyber-charter-schools"
+      ]
+    },
+    {
+      "id": "transition-back",
+      "category": "Flexibility",
+      "priority": 23,
+      "label": "Transition back to in-person Parkland",
+      "parentQuestion": "If online learning stops fitting, can the student transition back locally?",
+      "parklandCell": {
+        "status": "included",
+        "value": "Transition back supported",
+        "detail": "PVA page states Parkland supports transition back to traditional in-person instruction.",
+        "sourceIds": [
+          "parkland-virtual-academy-page"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Not the same-district Parkland transition",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Not the same-district Parkland transition",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Not the same-district Parkland transition",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Not the same-district Parkland transition",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Not the same-district Parkland transition",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Not the same-district Parkland transition",
+            "detail": "Separate cyber charter school model; compare the public program directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-virtual-academy-page",
+        "pde-cyber-charter-schools"
+      ]
+    },
+    {
+      "id": "local-virtual-support",
+      "category": "Student support",
+      "priority": 24,
+      "label": "Local in-person virtual support",
+      "parentQuestion": "Can an online learner get local in-person help from Parkland staff?",
+      "parklandCell": {
+        "status": "strong",
+        "value": "On-site classroom + Parkland staff",
+        "detail": "PVA page describes an on-site classroom and daily in-person assistance from Parkland staff.",
+        "sourceIds": [
+          "parkland-virtual-academy-page"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_directly_comparable",
+            "value": "Brick-and-mortar K-8",
+            "detail": "Circle is a physical K-8 charter; compare its support model directly.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify local supports",
+            "detail": "Statewide cyber model; verify local in-person supports directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify local supports",
+            "detail": "Statewide cyber model; verify local in-person supports directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify local supports",
+            "detail": "Statewide cyber model; verify local in-person supports directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify local supports",
+            "detail": "Statewide cyber model; verify local in-person supports directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify local supports",
+            "detail": "Statewide cyber model; verify local in-person supports directly.",
+            "sourceIds": [
+              "pde-cyber-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-virtual-academy-page",
+        "pde-cyber-charter-schools",
+        "circle-of-seasons-homepage"
+      ]
+    },
+    {
+      "id": "seven-day-tutoring",
+      "category": "Student support",
+      "priority": 25,
+      "label": "Seven-day tutoring support through PVA",
+      "parentQuestion": "What academic help is described for virtual learners?",
+      "parklandCell": {
+        "status": "included",
+        "value": "Seven-day on-demand tutoring",
+        "detail": "PVA page states extensive on-demand tutoring is available seven days a week.",
+        "sourceIds": [
+          "parkland-virtual-academy-page"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-virtual-academy-page"
+      ]
+    },
+    {
+      "id": "ap-course-offerings",
+      "category": "High school depth",
+      "priority": 30,
+      "label": "AP course offerings",
+      "parentQuestion": "How much high school course depth is documented publicly?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "30 AP course offerings",
+        "detail": "Parkland High School Profile lists 30 AP course offerings.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile"
+      ]
+    },
+    {
+      "id": "electives",
+      "category": "High school depth",
+      "priority": 31,
+      "label": "Electives",
+      "parentQuestion": "How broad is the documented high school course menu?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "162 elective offerings",
+        "detail": "Parkland High School Profile lists 162 elective offerings.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile"
+      ]
+    },
+    {
+      "id": "dual-credit",
+      "category": "High school depth",
+      "priority": 32,
+      "label": "Dual credit",
+      "parentQuestion": "Are college-credit opportunities documented?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "49 dual-credit courses",
+        "detail": "Parkland High School Profile lists 49 dual-credit courses.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not applicable - K-8",
+            "detail": "Circle of Seasons states that it serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile"
+      ]
+    },
+    {
+      "id": "world-languages",
+      "category": "High school depth",
+      "priority": 33,
+      "label": "World languages",
+      "parentQuestion": "How many world language courses are publicly documented?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "7 world language courses",
+        "detail": "Parkland High School Profile lists 7 world language courses.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly / K-8 scope",
+            "detail": "Compare the current K-8 language offerings directly with Circle of Seasons.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile"
+      ]
+    },
+    {
+      "id": "pltw-pathways",
+      "category": "High school depth",
+      "priority": 34,
+      "label": "Project Lead The Way pathways",
+      "parentQuestion": "Are specialized STEM pathways documented?",
+      "parklandCell": {
+        "status": "included",
+        "value": "Biomedical, Computer Science, Engineering",
+        "detail": "Parkland High School Profile lists three Project Lead The Way career pathways.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "not_applicable",
+            "value": "Not a high-school pathway",
+            "detail": "Circle of Seasons serves grades K-8.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile"
+      ]
+    },
+    {
+      "id": "arts-offerings",
+      "category": "Activities",
+      "priority": 40,
+      "label": "Arts offerings",
+      "parentQuestion": "What arts depth is documented publicly?",
+      "parklandCell": {
+        "status": "included",
+        "value": "19 visual arts + 19 music/theatre courses",
+        "detail": "Parkland High School Profile lists 19 visual arts courses and 19 music/theatre courses.",
+        "sourceIds": [
+          "parkland-high-school-profile",
+          "parkland-arts"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Use Circle of Seasons public materials to compare current arts offerings.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile",
+        "parkland-arts",
+        "circle-of-seasons-homepage"
+      ]
+    },
+    {
+      "id": "athletics",
+      "category": "Activities",
+      "priority": 41,
+      "label": "Athletics",
+      "parentQuestion": "What athletic access is documented?",
+      "parklandCell": {
+        "status": "included",
+        "value": "23 sports in profile; district also publishes athletics info",
+        "detail": "Parkland High School Profile lists 23 sports. Parkland's athletics page is retained as an additional source.",
+        "sourceIds": [
+          "parkland-high-school-profile",
+          "parkland-athletics"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct count.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile",
+        "parkland-athletics"
+      ]
+    },
+    {
+      "id": "clubs",
+      "category": "Activities",
+      "priority": 42,
+      "label": "Clubs",
+      "parentQuestion": "How much student activity choice is documented?",
+      "parklandCell": {
+        "status": "numeric",
+        "value": "More than 80 clubs",
+        "detail": "Parkland High School Profile says more than 80 clubs are offered.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct count.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile"
+      ]
+    },
+    {
+      "id": "late-activity-transportation",
+      "category": "Activities",
+      "priority": 43,
+      "label": "Late activity transportation",
+      "parentQuestion": "Can students get home after activities?",
+      "parklandCell": {
+        "status": "included",
+        "value": "Late activity bus support",
+        "detail": "Parkland maintains a late activity bus page; families should review route details and exceptions there.",
+        "sourceIds": [
+          "parkland-late-activity-bus"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-late-activity-bus"
+      ]
+    },
+    {
+      "id": "campus-facilities",
+      "category": "Facilities",
+      "priority": 50,
+      "label": "Campus facilities",
+      "parentQuestion": "What physical campus depth is documented?",
+      "parklandCell": {
+        "status": "included",
+        "value": "128-acre high school campus",
+        "detail": "Profile describes theatres, studios, pool, tennis courts, fields, track/event arena, turf field, and lighted fields.",
+        "sourceIds": [
+          "parkland-high-school-profile"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Use official campus details",
+            "detail": "Circle of Seasons states it is located on a campus in Fogelsville; compare current facilities directly.",
+            "sourceIds": [
+              "circle-of-seasons-homepage"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-high-school-profile",
+        "circle-of-seasons-homepage"
+      ]
+    },
+    {
+      "id": "special-education",
+      "category": "Student support",
+      "priority": 60,
+      "label": "Special education services",
+      "parentQuestion": "How should families compare student services?",
+      "parklandCell": {
+        "status": "included",
+        "value": "Continuum of services",
+        "detail": "Parkland special education page describes a continuum of services and individualized programs.",
+        "sourceIds": [
+          "parkland-special-education"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-special-education",
+        "pde-charter-schools"
+      ]
+    },
+    {
+      "id": "gifted-education",
+      "category": "Student support",
+      "priority": 61,
+      "label": "Gifted education",
+      "parentQuestion": "Are gifted services documented?",
+      "parklandCell": {
+        "status": "included",
+        "value": "K-12 gifted services",
+        "detail": "Parkland gifted page describes services from elementary through high school.",
+        "sourceIds": [
+          "parkland-gifted-education"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-gifted-education"
+      ]
+    },
+    {
+      "id": "esl-support",
+      "category": "Student support",
+      "priority": 62,
+      "label": "ESL support",
+      "parentQuestion": "Are English learner supports documented?",
+      "parklandCell": {
+        "status": "included",
+        "value": "ESL program page",
+        "detail": "Parkland publishes an ESL program page through the Office of Teaching and Learning.",
+        "sourceIds": [
+          "parkland-esl-program"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-esl-program"
+      ]
+    },
+    {
+      "id": "speech-language-support",
+      "category": "Student support",
+      "priority": 63,
+      "label": "Speech/language support",
+      "parentQuestion": "Are speech and language supports documented?",
+      "parklandCell": {
+        "status": "included",
+        "value": "Speech/language support listed in student services",
+        "detail": "Parkland student services navigation includes Speech & Language Support.",
+        "sourceIds": [
+          "parkland-student-services"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-student-services"
+      ]
+    },
+    {
+      "id": "pva-local-guidance",
+      "category": "Student support",
+      "priority": 64,
+      "label": "Local counseling, mental health, college and career guidance through PVA",
+      "parentQuestion": "Does the virtual model include local Parkland guidance?",
+      "parklandCell": {
+        "status": "strong",
+        "value": "Local PVA team",
+        "detail": "PVA page describes a local program director, counselor, and special education specialists.",
+        "sourceIds": [
+          "parkland-virtual-academy-page"
+        ]
+      },
+      "comparatorRules": [
+        {
+          "entityId": "circle-of-seasons-charter-school",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "commonwealth-charter-academy-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "agora-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-virtual-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "21st-century-cyber-cs",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        },
+        {
+          "entityId": "pa-state",
+          "cell": {
+            "status": "verify",
+            "value": "Verify directly",
+            "detail": "Public source data is insufficient for a direct comparison.",
+            "sourceIds": [
+              "pde-charter-schools"
+            ]
+          }
+        }
+      ],
+      "sourceIds": [
+        "parkland-virtual-academy-page"
+      ]
+    }
+  ]
+}

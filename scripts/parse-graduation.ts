@@ -9,6 +9,8 @@ const entitiesByAun: Record<string, { id: string; name: string; type: MetricReco
   "124150002": { id: "21st-century-cyber-cs", name: "21st Century Cyber CS", type: "cyber" },
   "126510020": { id: "agora-cyber-cs", name: "Agora Cyber CS", type: "cyber" },
   "115220002": { id: "commonwealth-charter-academy-cs", name: "Commonwealth Charter Academy CS", type: "cyber" },
+  "127043430": { id: "pa-cyber-cs", name: "PA Cyber", type: "cyber" },
+  "123460001": { id: "pa-virtual-cs", name: "PA Virtual", type: "cyber" },
 };
 
 function rateToPercent(value: unknown) {

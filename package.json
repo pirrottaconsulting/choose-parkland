@@ -10,7 +10,7 @@
     "lint": "eslint",
     "data:download": "node --experimental-strip-types scripts/download-official-data.ts",
     "data:parse": "node --experimental-strip-types scripts/parse-pssa.ts && node --experimental-strip-types scripts/parse-keystone.ts && node --experimental-strip-types scripts/parse-future-ready.ts && node --experimental-strip-types scripts/parse-graduation.ts",
-    "data:generate": "node --experimental-strip-types scripts/generate-comparison-content.ts",
+    "data:generate": "node --experimental-strip-types scripts/generate-comparison-content.ts && node --experimental-strip-types scripts/research-official-pages.ts && node --experimental-strip-types scripts/generate-comparison-rows.ts && node --experimental-strip-types scripts/generate-comparison-copy.ts && node --experimental-strip-types scripts/validate-claims.ts",
     "data:update": "npm run data:download && npm run data:parse && npm run data:generate",
     "data:check": "node --experimental-strip-types scripts/check-official-data.ts",
     "data:monitor": "node --experimental-strip-types scripts/monitor-official-sources.ts",

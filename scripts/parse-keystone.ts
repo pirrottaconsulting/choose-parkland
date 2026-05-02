@@ -8,6 +8,8 @@ const ENTITY_BY_AUN: Record<string, { id: string; type: MetricRecord["entityType
   "124150002": { id: "21st-century-cyber-cs", type: "cyber", name: "21st Century Cyber CS" },
   "126510020": { id: "agora-cyber-cs", type: "cyber", name: "Agora Cyber CS" },
   "115220002": { id: "commonwealth-charter-academy-cs", type: "cyber", name: "Commonwealth Charter Academy CS" },
+  "127043430": { id: "pa-cyber-cs", type: "cyber", name: "PA Cyber" },
+  "123460001": { id: "pa-virtual-cs", type: "cyber", name: "PA Virtual" },
 };
 
 function shouldKeep(row: Record<string, unknown>, type: "district" | "school" | "state") {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T13:51:50.956Z",
+  "generatedAt": "2026-05-02T19:34:19.568Z",
   "sources": [
     "pde-2025-pssa-district",
     "pde-2025-pssa-school",
@@ -9,7 +9,7 @@
     {
       "id": "pde-2025-pssa-district-parkland-school-district-english-language-arts",
       "entityId": "parkland-school-district",
-      "entityName": "PARKLAND SD",
+      "entityName": "Parkland School District",
       "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -26,7 +26,7 @@
     {
       "id": "pde-2025-pssa-district-parkland-school-district-math",
       "entityId": "parkland-school-district",
-      "entityName": "PARKLAND SD",
+      "entityName": "Parkland School District",
       "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -41,9 +41,9 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-127043430-7650-english-language-arts",
-      "entityId": "127043430-7650",
-      "entityName": "PENNSYLVANIA CYBER CS",
+      "id": "pde-2025-pssa-school-pa-cyber-cs-english-language-arts",
+      "entityId": "pa-cyber-cs",
+      "entityName": "PA Cyber",
       "entityType": "cyber",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -58,9 +58,9 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-127043430-7650-math",
-      "entityId": "127043430-7650",
-      "entityName": "PENNSYLVANIA CYBER CS",
+      "id": "pde-2025-pssa-school-pa-cyber-cs-math",
+      "entityId": "pa-cyber-cs",
+      "entityName": "PA Cyber",
       "entityType": "cyber",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -109,9 +109,9 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-124150002-7691-english-language-arts",
-      "entityId": "124150002-7691",
-      "entityName": "21ST CENTURY CYBER CS",
+      "id": "pde-2025-pssa-school-21st-century-cyber-cs-english-language-arts",
+      "entityId": "21st-century-cyber-cs",
+      "entityName": "21st Century Cyber CS",
       "entityType": "cyber",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -126,9 +126,9 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-124150002-7691-math",
-      "entityId": "124150002-7691",
-      "entityName": "21ST CENTURY CYBER CS",
+      "id": "pde-2025-pssa-school-21st-century-cyber-cs-math",
+      "entityId": "21st-century-cyber-cs",
+      "entityName": "21st Century Cyber CS",
       "entityType": "cyber",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -143,9 +143,9 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-126510020-7858-english-language-arts",
-      "entityId": "126510020-7858",
-      "entityName": "AGORA CYBER CS",
+      "id": "pde-2025-pssa-school-agora-cyber-cs-english-language-arts",
+      "entityId": "agora-cyber-cs",
+      "entityName": "Agora Cyber CS",
       "entityType": "cyber",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -160,9 +160,9 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-126510020-7858-math",
-      "entityId": "126510020-7858",
-      "entityName": "AGORA CYBER CS",
+      "id": "pde-2025-pssa-school-agora-cyber-cs-math",
+      "entityId": "agora-cyber-cs",
+      "entityName": "Agora Cyber CS",
       "entityType": "cyber",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -211,6 +211,40 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
+      "id": "pde-2025-pssa-school-commonwealth-charter-academy-cs-english-language-arts",
+      "entityId": "commonwealth-charter-academy-cs",
+      "entityName": "Commonwealth Charter Academy CS",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "Percent proficient or advanced",
+      "subject": "English Language Arts",
+      "grade": "Total",
+      "value": 37.3,
+      "displayValue": "37.3%",
+      "schoolYear": "2025",
+      "sourceId": "pde-2025-pssa-school",
+      "sourceName": "2025 PSSA School Level Data",
+      "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+      "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+    },
+    {
+      "id": "pde-2025-pssa-school-commonwealth-charter-academy-cs-math",
+      "entityId": "commonwealth-charter-academy-cs",
+      "entityName": "Commonwealth Charter Academy CS",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "Percent proficient or advanced",
+      "subject": "Math",
+      "grade": "Total",
+      "value": 15.8,
+      "displayValue": "15.8%",
+      "schoolYear": "2025",
+      "sourceId": "pde-2025-pssa-school",
+      "sourceName": "2025 PSSA School Level Data",
+      "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+      "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+    },
+    {
       "id": "pde-2025-pssa-school-115227871-8366-english-language-arts",
       "entityId": "115227871-8366",
       "entityName": "REACH CYBER CS",
@@ -247,7 +281,7 @@
     {
       "id": "pde-2025-pssa-school-circle-of-seasons-charter-school-english-language-arts",
       "entityId": "circle-of-seasons-charter-school",
-      "entityName": "CIRCLE OF SEASONS CS",
+      "entityName": "Circle of Seasons CS",
       "entityType": "school",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -264,7 +298,7 @@
     {
       "id": "pde-2025-pssa-school-circle-of-seasons-charter-school-math",
       "entityId": "circle-of-seasons-charter-school",
-      "entityName": "CIRCLE OF SEASONS CS",
+      "entityName": "Circle of Seasons CS",
       "entityType": "school",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
@@ -279,10 +313,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2824-english-language-arts",
-      "entityId": "121395103-2824",
-      "entityName": "CETRONIA SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -296,10 +330,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2824-math",
-      "entityId": "121395103-2824",
-      "entityName": "CETRONIA SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -313,10 +347,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-4672-english-language-arts",
-      "entityId": "121395103-4672",
-      "entityName": "FOGELSVILLE SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -330,10 +364,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-4672-math",
-      "entityId": "121395103-4672",
-      "entityName": "FOGELSVILLE SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -347,10 +381,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-8141-english-language-arts",
-      "entityId": "121395103-8141",
-      "entityName": "FRED J. JAINDL EL SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -364,10 +398,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-8141-math",
-      "entityId": "121395103-8141",
-      "entityName": "FRED J. JAINDL EL SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -381,10 +415,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2823-english-language-arts",
-      "entityId": "121395103-2823",
-      "entityName": "IRONTON SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -398,10 +432,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2823-math",
-      "entityId": "121395103-2823",
-      "entityName": "IRONTON SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -415,10 +449,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-6801-english-language-arts",
-      "entityId": "121395103-6801",
-      "entityName": "KERNSVILLE SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -432,10 +466,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-6801-math",
-      "entityId": "121395103-6801",
-      "entityName": "KERNSVILLE SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -449,10 +483,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2827-english-language-arts",
-      "entityId": "121395103-2827",
-      "entityName": "KRATZER SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -466,10 +500,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2827-math",
-      "entityId": "121395103-2827",
-      "entityName": "KRATZER SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -483,10 +517,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-7604-english-language-arts",
-      "entityId": "121395103-7604",
-      "entityName": "OREFIELD MS",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -500,10 +534,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-7604-math",
-      "entityId": "121395103-7604",
-      "entityName": "OREFIELD MS",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -517,10 +551,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2826-english-language-arts",
-      "entityId": "121395103-2826",
-      "entityName": "PARKWAY MANOR SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -534,10 +568,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2826-math",
-      "entityId": "121395103-2826",
-      "entityName": "PARKWAY MANOR SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -551,10 +585,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2825-english-language-arts",
-      "entityId": "121395103-2825",
-      "entityName": "SCHNECKSVILLE SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -568,10 +602,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-2825-math",
-      "entityId": "121395103-2825",
-      "entityName": "SCHNECKSVILLE SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -585,10 +619,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-7603-english-language-arts",
-      "entityId": "121395103-7603",
-      "entityName": "SPRINGHOUSE MS",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -602,10 +636,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-7603-math",
-      "entityId": "121395103-7603",
-      "entityName": "SPRINGHOUSE MS",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
@@ -619,10 +653,10 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-8474-english-language-arts",
-      "entityId": "121395103-8474",
-      "entityName": "VETERANS MEMORIAL EL SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-english-language-arts",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "English Language Arts",
@@ -636,16 +670,50 @@
       "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
     },
     {
-      "id": "pde-2025-pssa-school-121395103-8474-math",
-      "entityId": "121395103-8474",
-      "entityName": "VETERANS MEMORIAL EL SCH",
-      "entityType": "school",
+      "id": "pde-2025-pssa-school-parkland-school-district-math",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
       "category": "Academics",
       "metric": "Percent proficient or advanced",
       "subject": "Math",
       "grade": "Total",
       "value": 79.2,
       "displayValue": "79.2%",
+      "schoolYear": "2025",
+      "sourceId": "pde-2025-pssa-school",
+      "sourceName": "2025 PSSA School Level Data",
+      "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+      "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+    },
+    {
+      "id": "pde-2025-pssa-school-pa-virtual-cs-english-language-arts",
+      "entityId": "pa-virtual-cs",
+      "entityName": "PA Virtual",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "Percent proficient or advanced",
+      "subject": "English Language Arts",
+      "grade": "Total",
+      "value": 34.9,
+      "displayValue": "34.9%",
+      "schoolYear": "2025",
+      "sourceId": "pde-2025-pssa-school",
+      "sourceName": "2025 PSSA School Level Data",
+      "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+      "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+    },
+    {
+      "id": "pde-2025-pssa-school-pa-virtual-cs-math",
+      "entityId": "pa-virtual-cs",
+      "entityName": "PA Virtual",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "Percent proficient or advanced",
+      "subject": "Math",
+      "grade": "Total",
+      "value": 17,
+      "displayValue": "17.0%",
       "schoolYear": "2025",
       "sourceId": "pde-2025-pssa-school",
       "sourceName": "2025 PSSA School Level Data",

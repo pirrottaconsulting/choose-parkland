@@ -1,52 +1,46 @@
 import type { Metadata } from "next";
-import { ComparisonExplorer } from "@/components/ComparisonExplorer";
+import { ComparisonMatrixHero } from "@/components/ComparisonMatrixHero";
 import { DataTable } from "@/components/DataTable";
-import { MetricCard } from "@/components/MetricCard";
-import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
-import { allMetrics } from "@/lib/generated";
 
 export const metadata: Metadata = {
-  title: "Parkland Virtual Academy",
+  title: "Parkland Virtual Academy vs cyber charter options",
   description:
-    "Explore Parkland Virtual Academy as a flexible, district-connected option to compare with cyber charter and alternative online schools.",
+    "Compare Parkland Virtual Academy with cyber charter options: Parkland diploma, hybrid or fully online schedules, on-site support, tutoring, activities, and transition back to in-person Parkland.",
 };
 
 export default function VirtualAcademyPage() {
-  const pvaMetrics = allMetrics.filter((metric) => metric.entityId === "parkland-virtual-academy");
-
   return (
     <>
-      <PageHero
-        eyebrow="Parkland Virtual Academy"
-        title="Flexibility without leaving the district connection."
-        description="Parkland Virtual Academy belongs in the cyber charter comparison because families should weigh online flexibility, district resources, activities, support, and accountability together."
-        primaryLabel="Compare with cyber charter"
-        primaryHref="/parkland-vs-cyber-charter"
+      <ComparisonMatrixHero
+        pageKey="parkland-virtual-academy"
+        fixedEntityId="parkland-virtual-academy"
+        defaultCategory="Flexibility"
+        heading="Online flexibility. Parkland connection."
+        subheading="Parkland Virtual Academy gives families online flexibility while keeping the Parkland diploma path, local support, activities, and a transition path back to in-person Parkland."
       />
       <Section
-        eyebrow="Program data"
-        title="What Parkland publishes about the virtual option."
-        description="Program facts are drawn from Parkland's public Virtual Academy page and displayed alongside official state data for Parkland and cyber charter schools."
+        eyebrow="PVA facts"
+        title="What Parkland publishes about the virtual academy."
+        description="These facts come from the Parkland Virtual Academy public page and are shown in the comparison as Parkland advantages, not as a separate competitor to Parkland School District."
       >
-        <div className="grid gap-4 md:grid-cols-2">
-          {pvaMetrics.map((metric) => (
-            <MetricCard key={metric.id} metric={metric} />
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            "Parkland High School diploma",
+            "Hybrid or fully online schedule",
+            "On-site classroom",
+            "Daily in-person assistance from Parkland staff",
+            "Seven-day on-demand tutoring",
+            "Transition back to traditional in-person instruction",
+          ].map((fact) => (
+            <div key={fact} className="rounded-lg border border-slate-200 bg-white p-5 font-black text-slate-900 shadow-sm">
+              {fact}
+            </div>
           ))}
         </div>
       </Section>
-      <Section
-        tone="soft"
-        eyebrow="Cyber charter comparison"
-        title="Compare flexibility with academics, support, and accountability."
-      >
-        <ComparisonExplorer limit={15} />
-      </Section>
-      <Section
-        title="Visible data table"
-        description="Cyber charter and Parkland rows come from Future Ready fast facts, performance data, PDE assessments, and Parkland's public program page."
-      >
-        <DataTable entityIds={["parkland-school-district", "parkland-virtual-academy", "commonwealth-charter-academy-cs", "agora-cyber-cs", "21st-century-cyber-cs"]} />
+      <Section tone="soft" title="Data appendix">
+        <DataTable entityIds={["parkland-school-district", "parkland-virtual-academy", "commonwealth-charter-academy-cs", "pa-cyber-cs", "agora-cyber-cs"]} />
       </Section>
     </>
   );

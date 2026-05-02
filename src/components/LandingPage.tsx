@@ -1,6 +1,5 @@
-import { ComparisonExplorer } from "@/components/ComparisonExplorer";
 import { DataTable } from "@/components/DataTable";
-import { PageHero } from "@/components/PageHero";
+import { ComparisonMatrixHero } from "@/components/ComparisonMatrixHero";
 import { Section } from "@/components/Section";
 import { TrendChart } from "@/components/TrendChart";
 import { pageBySlug } from "@/lib/generated";
@@ -13,7 +12,7 @@ type LandingPageProps = {
   entityIds?: string[];
 };
 
-export function LandingPage({ slug, eyebrow, title, description, entityIds }: LandingPageProps) {
+export function LandingPage({ slug, title, description, entityIds }: LandingPageProps) {
   const content = pageBySlug(slug);
   const faqSchema = {
     "@context": "https://schema.org",
@@ -54,21 +53,13 @@ export function LandingPage({ slug, eyebrow, title, description, entityIds }: La
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([faqSchema, itemListSchema]) }}
       />
-      <PageHero eyebrow={eyebrow} title={title} description={description} />
+      <ComparisonMatrixHero pageKey={slug} heading={title} subheading={description} />
       <Section
         eyebrow="What the official data shows"
         title={content?.sections[0]?.heading ?? "What the official data shows"}
         description={content?.sections[0]?.body}
       >
         <DataTable entityIds={entityIds} />
-      </Section>
-      <Section
-        tone="soft"
-        eyebrow="Interactive comparison"
-        title="Filter by parent decision category."
-        description="Review academics, flexibility, support, activities, accountability, and community connection using the imported source-backed metrics."
-      >
-        <ComparisonExplorer limit={12} />
       </Section>
       <Section
         eyebrow="Trend view"

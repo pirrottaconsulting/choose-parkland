@@ -45,8 +45,12 @@ Generated static data:
 - `src/data/generated/graduation-metrics.json`
 - `src/data/generated/future-ready-metrics.json`
 - `src/data/generated/all-metrics.json`
+- `src/data/generated/metrics.json`
 - `src/data/generated/comparison-content.json`
 - `src/data/generated/comparison-matrix.json`
+- `src/data/generated/source-documents.json`
+- `src/data/generated/comparison-rows.json`
+- `src/data/generated/comparison-pages.json`
 
 Each generated metric includes:
 
