@@ -1,9 +1,21 @@
-import { writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
+import { copyFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { ensureDir, officialSources, ROOT, sourceWithFileStats, writeJson } from "./data-utils.ts";
 
 async function download(source: (typeof officialSources)[number]) {
   const outputPath = join(ROOT, source.localPath);
+
+  if (source.localFallbackPath) {
+    if (!existsSync(source.localFallbackPath)) {
+      throw new Error(`Local official workbook is missing for ${source.name}: ${source.localFallbackPath}`);
+    }
+    await ensureDir(dirname(outputPath));
+    await copyFile(source.localFallbackPath, outputPath);
+    console.log(`Copied local official workbook for ${source.name} -> ${source.localPath}`);
+    return;
+  }
+
   await ensureDir(dirname(outputPath));
 
   const response = await fetch(source.url, {

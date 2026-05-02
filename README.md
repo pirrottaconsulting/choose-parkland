@@ -42,9 +42,11 @@ Generated static data:
 - `src/data/generated/entities.json`
 - `src/data/generated/pssa-metrics.json`
 - `src/data/generated/keystone-metrics.json`
+- `src/data/generated/graduation-metrics.json`
 - `src/data/generated/future-ready-metrics.json`
 - `src/data/generated/all-metrics.json`
 - `src/data/generated/comparison-content.json`
+- `src/data/generated/comparison-matrix.json`
 
 Each generated metric includes:
 
@@ -63,6 +65,8 @@ Current source targets:
 - PDE Assessment Reporting: `https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting`
 - 2025 PDE PSSA school, district, and state Excel files
 - 2025 PDE Keystone school and district Excel files
+- 2024 PDE Keystone grade 11 files supplied locally from PDE downloads
+- 2024-2025 Pennsylvania 4-year cohort graduation rates supplied locally from PDE downloads
 - Future Ready PA Data Files: `https://futurereadypa.org/Home/DataFiles`
 - Future Ready Performance Data for SY 2024-2025
 - Future Ready School Fast Facts for SY 2024-2025

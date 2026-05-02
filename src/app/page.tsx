@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ComparisonExplorer } from "@/components/ComparisonExplorer";
 import { DataDashboard } from "@/components/DataDashboard";
 import { DataTable } from "@/components/DataTable";
+import { ParklandComparisonBuilder } from "@/components/ParklandComparisonBuilder";
 import { Section } from "@/components/Section";
 import { SourceList } from "@/components/SourceList";
 import { comparisonContent, metricBy } from "@/lib/generated";
@@ -80,10 +80,10 @@ export default function Home() {
 
       <Section
         eyebrow="Comparison selector"
-        title="Filter the comparison by what matters to your family."
-        description="Use the category controls to move between academics, flexibility, activities, support, accountability, and community connection."
+        title="Build a side-by-side comparison."
+        description="Parkland School District stays fixed on the left. Add charter, cyber charter, statewide, or Parkland Virtual Academy comparisons to the right."
       >
-        <ComparisonExplorer />
+        <ParklandComparisonBuilder />
       </Section>
 
       <Section

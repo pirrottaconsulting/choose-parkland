@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T13:30:59.577Z",
+  "generatedAt": "2026-05-02T13:52:26.087Z",
   "sources": [
     {
       "id": "pde-2025-pssa-district",
@@ -9,7 +9,7 @@
       "category": "pssa",
       "level": "district",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:38.938Z",
       "bytes": 4808196
     },
@@ -21,7 +21,7 @@
       "category": "pssa",
       "level": "school",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:39.856Z",
       "bytes": 17988831
     },
@@ -33,7 +33,7 @@
       "category": "pssa",
       "level": "state",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:40.428Z",
       "bytes": 26210
     },
@@ -45,7 +45,7 @@
       "category": "keystone",
       "level": "district",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:41.114Z",
       "bytes": 999563
     },
@@ -57,7 +57,7 @@
       "category": "keystone",
       "level": "state",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:41.732Z",
       "bytes": 15272
     },
@@ -69,9 +69,45 @@
       "category": "keystone",
       "level": "school",
       "schoolYear": "2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:42.367Z",
       "bytes": 1553737
+    },
+    {
+      "id": "pde-2024-keystone-district-grade-11",
+      "name": "2024 Keystone Exams District Grade 11 Data",
+      "url": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "localPath": "data/raw/pde/2024-keystone-exams-district-grade-11-data.xlsx",
+      "category": "keystone",
+      "level": "district",
+      "schoolYear": "2024",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
+      "fileDate": "2026-05-02T13:14:01.772Z",
+      "bytes": 1248461
+    },
+    {
+      "id": "pde-2024-keystone-school-grade-11",
+      "name": "2024 Keystone Exams School Grade 11 Data",
+      "url": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "localPath": "data/raw/pde/2024-keystone-exams-school-grade-11-data.xlsx",
+      "category": "keystone",
+      "level": "school",
+      "schoolYear": "2024",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
+      "fileDate": "2026-05-02T13:13:55.048Z",
+      "bytes": 1569492
+    },
+    {
+      "id": "pde-2024-2025-four-year-graduation-rates",
+      "name": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+      "url": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "localPath": "data/raw/pde/2024-2025-pennsylvania-4-year-cohort-graduation-rates.xlsx",
+      "category": "keystone",
+      "level": "district",
+      "schoolYear": "2024-2025",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
+      "fileDate": "2026-05-02T13:15:51.342Z",
+      "bytes": 236756
     },
     {
       "id": "future-ready-performance-2024-2025",
@@ -81,7 +117,7 @@
       "category": "future-ready",
       "level": "performance",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:43.487Z",
       "bytes": 5113109
     },
@@ -93,7 +129,7 @@
       "category": "future-ready",
       "level": "school-fast-facts",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:44.104Z",
       "bytes": 683673
     },
@@ -105,7 +141,7 @@
       "category": "future-ready",
       "level": "district-fast-facts",
       "schoolYear": "2024-2025",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:44.650Z",
       "bytes": 131584
     },
@@ -116,7 +152,7 @@
       "localPath": "data/raw/program/parkland-virtual-academy.html",
       "category": "program",
       "schoolYear": "2025-2026",
-      "retrievedAt": "2026-05-02T13:30:59.568Z",
+      "retrievedAt": "2026-05-02T13:52:26.077Z",
       "fileDate": "2026-05-02T13:30:46.281Z",
       "bytes": 56148
     }

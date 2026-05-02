@@ -1,0 +1,1153 @@
+{
+  "generatedAt": "2026-05-02T13:52:26.086Z",
+  "categories": [
+    "Academics",
+    "Flexibility",
+    "Activities",
+    "Student support",
+    "Accountability",
+    "Community connection"
+  ],
+  "entities": [
+    {
+      "id": "parkland-school-district",
+      "name": "Parkland School District",
+      "label": "Your local public district",
+      "type": "district",
+      "locked": true
+    },
+    {
+      "id": "circle-of-seasons-charter-school",
+      "name": "Circle of Seasons CS",
+      "label": "Local charter option",
+      "type": "charter",
+      "defaultSelected": true
+    },
+    {
+      "id": "parkland-virtual-academy",
+      "name": "Parkland Virtual Academy",
+      "label": "District-connected virtual option",
+      "type": "program",
+      "defaultSelected": true
+    },
+    {
+      "id": "commonwealth-charter-academy-cs",
+      "name": "Commonwealth Charter Academy CS",
+      "label": "Cyber charter option",
+      "type": "cyber"
+    },
+    {
+      "id": "agora-cyber-cs",
+      "name": "Agora Cyber CS",
+      "label": "Cyber charter option",
+      "type": "cyber"
+    },
+    {
+      "id": "21st-century-cyber-cs",
+      "name": "21st Century Cyber CS",
+      "label": "Cyber charter option",
+      "type": "cyber"
+    },
+    {
+      "id": "pa-state",
+      "name": "Pennsylvania statewide",
+      "label": "Statewide benchmark",
+      "type": "state"
+    }
+  ],
+  "rows": [
+    {
+      "id": "school-type",
+      "category": "Community connection",
+      "label": "Option type",
+      "context": "Helps families compare district, charter, cyber charter, and statewide benchmark rows.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "Your local public district",
+          "rawValue": "Your local public district",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Local charter option",
+          "rawValue": "Local charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "District-connected virtual option",
+          "rawValue": "District-connected virtual option",
+          "status": "available",
+          "sourceId": "parkland-virtual-academy-page",
+          "sourceName": "Parkland Virtual Academy public program page",
+          "sourceUrl": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+          "schoolYear": "2025-2026"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "Cyber charter option",
+          "rawValue": "Cyber charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "Cyber charter option",
+          "rawValue": "Cyber charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "Cyber charter option",
+          "rawValue": "Cyber charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Statewide benchmark",
+          "rawValue": "Statewide benchmark",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        }
+      }
+    },
+    {
+      "id": "enrollment",
+      "category": "Community connection",
+      "label": "Enrollment",
+      "context": "Enrollment is shown from Future Ready fast facts where available.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "10040",
+          "rawValue": "10040",
+          "status": "available",
+          "sourceId": "future-ready-district-fast-facts-2024-2025",
+          "sourceName": "District Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=59",
+          "schoolYear": "2024-2025"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "433",
+          "rawValue": "433",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Program enrollment is not separately reported in the current official files",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "29325",
+          "rawValue": "29325",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "4156",
+          "rawValue": "4156",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "996",
+          "rawValue": "996",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "grades-offered",
+      "category": "Community connection",
+      "label": "Grades offered",
+      "context": "Grade span affects which assessments and services are directly comparable.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "rawValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "status": "available",
+          "sourceId": "future-ready-district-fast-facts-2024-2025",
+          "sourceName": "District Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=59",
+          "schoolYear": "2024-2025"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8",
+          "rawValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "District virtual pathway; confirm current grade eligibility with Parkland",
+          "rawValue": "District virtual pathway; confirm current grade eligibility with Parkland",
+          "status": "available",
+          "sourceId": "parkland-virtual-academy-page",
+          "sourceName": "Parkland Virtual Academy public program page",
+          "sourceUrl": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+          "schoolYear": "2025-2026"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "rawValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "rawValue": "K5F, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "6, 7, 8, 9, 10, 11, 12",
+          "rawValue": "6, 7, 8, 9, 10, 11, 12",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Statewide benchmark",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "virtual-flexibility",
+      "category": "Flexibility",
+      "label": "Virtual learning path",
+      "context": "Compares online flexibility without assuming every online option works the same way.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "Parkland Virtual Academy available as district-connected pathway",
+          "rawValue": "Parkland Virtual Academy available as district-connected pathway",
+          "status": "available",
+          "sourceId": "parkland-virtual-academy-page",
+          "sourceName": "Parkland Virtual Academy public program page",
+          "sourceUrl": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+          "schoolYear": "2025-2026"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Virtual option connected to Parkland district resources",
+          "rawValue": "Virtual option connected to Parkland district resources",
+          "status": "available",
+          "sourceId": "parkland-virtual-academy-page",
+          "sourceName": "Parkland Virtual Academy public program page",
+          "sourceUrl": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+          "schoolYear": "2025-2026"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "Cyber charter option",
+          "rawValue": "Cyber charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "Cyber charter option",
+          "rawValue": "Cyber charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "Cyber charter option",
+          "rawValue": "Cyber charter option",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "activities-connection",
+      "category": "Activities",
+      "label": "Activities and local connection",
+      "context": "Program pages and district information should be reviewed for eligibility details.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "District athletics, arts, clubs, and school community",
+          "rawValue": "District athletics, arts, clubs, and school community",
+          "status": "available",
+          "sourceId": "parkland-virtual-academy-page",
+          "sourceName": "Parkland Virtual Academy public program page",
+          "sourceUrl": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+          "schoolYear": "2025-2026"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Verify with the individual school",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Activities connection described on Parkland program page",
+          "rawValue": "Activities connection described on Parkland program page",
+          "status": "available",
+          "sourceId": "parkland-virtual-academy-page",
+          "sourceName": "Parkland Virtual Academy public program page",
+          "sourceUrl": "https://www.parklandsd.org/schools/parkland-virtual-academy",
+          "schoolYear": "2025-2026",
+          "note": "Families should confirm current eligibility details with Parkland."
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "Verify with the individual school",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "Verify with the individual school",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "Verify with the individual school",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "pa-state": {
+          "displayValue": "Not applicable",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "ela-literature",
+      "category": "Academics",
+      "label": "ELA / literature proficiency",
+      "context": "Uses PSSA ELA where available; otherwise uses Future Ready ELA/literature.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "69.0%",
+          "rawValue": 69,
+          "status": "available",
+          "sourceId": "pde-2025-pssa-district",
+          "sourceName": "2025 PSSA District Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-district-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "64.3%",
+          "rawValue": 64.3,
+          "status": "available",
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "9.1%",
+          "rawValue": 9.1,
+          "status": "available",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "20.5%",
+          "rawValue": 20.5,
+          "status": "available",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "44.0%",
+          "rawValue": 44,
+          "status": "available",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "48.6%",
+          "rawValue": 48.6,
+          "status": "available",
+          "sourceId": "pde-2025-pssa-state",
+          "sourceName": "2025 PSSA State Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-state-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+        }
+      }
+    },
+    {
+      "id": "math-algebra",
+      "category": "Academics",
+      "label": "Math / algebra proficiency",
+      "context": "Uses PSSA math where available; otherwise uses Future Ready math/algebra.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "66.6%",
+          "rawValue": 66.6,
+          "status": "available",
+          "sourceId": "pde-2025-pssa-district",
+          "sourceName": "2025 PSSA District Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-district-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "37.0%",
+          "rawValue": 37,
+          "status": "available",
+          "sourceId": "pde-2025-pssa-school",
+          "sourceName": "2025 PSSA School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/pssa-and-ayp-results/2025-pssa-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "PSSA results include grades 3-8 where applicable and exclude groups not reported by PDE disclosure rules."
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "4.2%",
+          "rawValue": 4.2,
+          "status": "available",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "6.4%",
+          "rawValue": 6.4,
+          "status": "available",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "22.1%",
+          "rawValue": 22.1,
+          "status": "available",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "science-biology",
+      "category": "Academics",
+      "label": "Science / biology proficiency",
+      "context": "Uses PSSA science where available; otherwise uses Future Ready science/biology.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "Not available in the current official file",
+          "rawValue": null,
+          "status": "missing",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not available in the current official file",
+          "rawValue": null,
+          "status": "missing",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "Not available in the current official file",
+          "rawValue": null,
+          "status": "missing",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "Not available in the current official file",
+          "rawValue": null,
+          "status": "missing",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "Not available in the current official file",
+          "rawValue": null,
+          "status": "missing",
+          "sourceId": "future-ready-performance-2024-2025",
+          "sourceName": "Future Ready Performance Data for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=60",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "keystone-algebra-2025",
+      "category": "Academics",
+      "label": "Keystone Algebra I, grade 11",
+      "context": "Latest supplied PDE Keystone district or school file, all students.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "60.1%",
+          "rawValue": 60.1,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-district",
+          "sourceName": "2025 Keystone District Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-district-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "16.4%",
+          "rawValue": 16.4,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "agora-cyber-cs": {
+          "displayValue": "10.2%",
+          "rawValue": 10.2,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "31.9%",
+          "rawValue": 31.9,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "pa-state": {
+          "displayValue": "44.3%",
+          "rawValue": 44.3,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-state",
+          "sourceName": "2025 Keystone State Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-state-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        }
+      }
+    },
+    {
+      "id": "keystone-biology-2025",
+      "category": "Academics",
+      "label": "Keystone Biology, grade 11",
+      "context": "Latest supplied PDE Keystone district or school file, all students.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "61.7%",
+          "rawValue": 61.7,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-district",
+          "sourceName": "2025 Keystone District Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-district-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "23.8%",
+          "rawValue": 23.8,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "agora-cyber-cs": {
+          "displayValue": "33.6%",
+          "rawValue": 33.6,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "48.4%",
+          "rawValue": 48.4,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "pa-state": {
+          "displayValue": "49.4%",
+          "rawValue": 49.4,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-state",
+          "sourceName": "2025 Keystone State Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-state-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        }
+      }
+    },
+    {
+      "id": "keystone-literature-2025",
+      "category": "Academics",
+      "label": "Keystone Literature, grade 11",
+      "context": "Latest supplied PDE Keystone district or school file, all students.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "79.8%",
+          "rawValue": 79.8,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-district",
+          "sourceName": "2025 Keystone District Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-district-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "42.1%",
+          "rawValue": 42.1,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "agora-cyber-cs": {
+          "displayValue": "41.6%",
+          "rawValue": 41.6,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "66.7%",
+          "rawValue": 66.7,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-school",
+          "sourceName": "2025 Keystone School Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-school-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "pa-state": {
+          "displayValue": "62.1%",
+          "rawValue": 62.1,
+          "status": "available",
+          "sourceId": "pde-2025-keystone-state",
+          "sourceName": "2025 Keystone State Level Data",
+          "sourceUrl": "https://www.pa.gov/content/dam/copapwp-pagov/en/education/documents/data-and-reporting/keystones/2025-keystone-exams-state-level-data.xlsx",
+          "schoolYear": "2025",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        }
+      }
+    },
+    {
+      "id": "keystone-algebra-2024",
+      "category": "Academics",
+      "label": "Keystone Algebra I, prior year",
+      "context": "2024 grade 11 file supports a simple year-over-year check where comparable rows exist.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "48.7%",
+          "rawValue": 48.7,
+          "status": "available",
+          "sourceId": "pde-2024-keystone-district-grade-11",
+          "sourceName": "2024 Keystone Exams District Grade 11 Data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "17.6%",
+          "rawValue": 17.6,
+          "status": "available",
+          "sourceId": "pde-2024-keystone-school-grade-11",
+          "sourceName": "2024 Keystone Exams School Grade 11 Data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "agora-cyber-cs": {
+          "displayValue": "16.0%",
+          "rawValue": 16,
+          "status": "available",
+          "sourceId": "pde-2024-keystone-school-grade-11",
+          "sourceName": "2024 Keystone Exams School Grade 11 Data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "35.5%",
+          "rawValue": 35.5,
+          "status": "available",
+          "sourceId": "pde-2024-keystone-school-grade-11",
+          "sourceName": "2024 Keystone Exams School Grade 11 Data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024",
+          "note": "Keystone results shown are grade 11 results where reported by PDE."
+        },
+        "pa-state": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "graduation-rate",
+      "category": "Academics",
+      "label": "4-year cohort graduation rate",
+      "context": "Graduation data applies to high school cohorts; K-8 options are not directly comparable.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "95.7%",
+          "rawValue": 95.7,
+          "status": "available",
+          "sourceId": "pde-2024-2025-four-year-graduation-rates",
+          "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024-2025",
+          "note": "763 graduates in a cohort of 797."
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "73.1%",
+          "rawValue": 73.1,
+          "status": "available",
+          "sourceId": "pde-2024-2025-four-year-graduation-rates",
+          "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024-2025",
+          "note": "3,210 graduates in a cohort of 4,393."
+        },
+        "agora-cyber-cs": {
+          "displayValue": "57.3%",
+          "rawValue": 57.3,
+          "status": "available",
+          "sourceId": "pde-2024-2025-four-year-graduation-rates",
+          "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024-2025",
+          "note": "346 graduates in a cohort of 604."
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "59.8%",
+          "rawValue": 59.8,
+          "status": "available",
+          "sourceId": "pde-2024-2025-four-year-graduation-rates",
+          "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "2024-2025",
+          "note": "180 graduates in a cohort of 301."
+        },
+        "pa-state": {
+          "displayValue": "Not available in the current official file",
+          "status": "missing",
+          "sourceName": "Current generated data",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "essa-designation",
+      "category": "Accountability",
+      "label": "ESSA designation",
+      "context": "Future Ready fast facts provide accountability designations where reported.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "DFLT",
+          "rawValue": "DFLT",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "CSI",
+          "rawValue": "CSI",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "CSI",
+          "rawValue": "CSI",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "ATSI",
+          "rawValue": "ATSI",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "special-education",
+      "category": "Student support",
+      "label": "Special education",
+      "context": "Shown where Future Ready fast facts report a public value.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "19.6%",
+          "rawValue": "19.6%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "30.8%",
+          "rawValue": "30.8%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "36.9%",
+          "rawValue": "36.9%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "23.4%",
+          "rawValue": "23.4%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    },
+    {
+      "id": "economically-disadvantaged",
+      "category": "Student support",
+      "label": "Economically disadvantaged",
+      "context": "Shown where Future Ready fast facts report a public value.",
+      "values": {
+        "parkland-school-district": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "circle-of-seasons-charter-school": {
+          "displayValue": "24.3%",
+          "rawValue": "24.3%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "parkland-virtual-academy": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        },
+        "commonwealth-charter-academy-cs": {
+          "displayValue": "67.5%",
+          "rawValue": "67.5%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "agora-cyber-cs": {
+          "displayValue": "45.0%",
+          "rawValue": "45.0%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "21st-century-cyber-cs": {
+          "displayValue": "7.1%",
+          "rawValue": "7.1%",
+          "status": "available",
+          "sourceId": "future-ready-school-fast-facts-2024-2025",
+          "sourceName": "School Fast Facts for SY 2024-2025",
+          "sourceUrl": "https://futurereadypa.org/home/getdatafile?id=58",
+          "schoolYear": "2024-2025"
+        },
+        "pa-state": {
+          "displayValue": "Not directly comparable based on public data",
+          "status": "missing",
+          "sourceName": "Current public data review",
+          "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+          "schoolYear": "Latest official data available"
+        }
+      }
+    }
+  ]
+}

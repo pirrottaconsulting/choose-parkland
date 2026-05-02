@@ -9,9 +9,11 @@ const requiredGenerated = [
   "entities.json",
   "pssa-metrics.json",
   "keystone-metrics.json",
+  "graduation-metrics.json",
   "future-ready-metrics.json",
   "all-metrics.json",
   "comparison-content.json",
+  "comparison-matrix.json",
 ];
 
 const bannedPhrases = [
@@ -54,6 +56,23 @@ for (const metric of allMetrics.metrics) {
   assert.ok(metric.displayValue && metric.displayValue !== "null", `Metric missing display value: ${metric.id}`);
 }
 
+const comparisonMatrix = readJson<{
+  entities: Array<{ id: string; locked?: boolean }>;
+  rows: Array<{ id: string; values: Record<string, { sourceName?: string; sourceUrl?: string; displayValue?: string }> }>;
+}>(join(generatedDir, "comparison-matrix.json"));
+assert.ok(
+  comparisonMatrix.entities.some((entity) => entity.id === "parkland-school-district" && entity.locked),
+  "Parkland should be locked as the left-side comparison entity",
+);
+assert.ok(comparisonMatrix.rows.length >= 10, "Expected generated comparison matrix rows");
+for (const row of comparisonMatrix.rows) {
+  for (const [entityId, value] of Object.entries(row.values)) {
+    assert.ok(value.sourceName, `Matrix row ${row.id}/${entityId} missing sourceName`);
+    assert.ok(value.sourceUrl, `Matrix row ${row.id}/${entityId} missing sourceUrl`);
+    assert.ok(value.displayValue, `Matrix row ${row.id}/${entityId} missing displayValue`);
+  }
+}
+
 const pageFiles = [
   "index.html",
   "compare.html",
@@ -71,6 +90,10 @@ for (const file of pageFiles) {
   const html = readFileSync(path, "utf8");
   assert.ok(html.includes("Source:"), `${file} does not include visible source citations`);
   assert.ok(html.includes("%") || html.includes("Enrollment"), `${file} does not include visible real content`);
+  if (file === "index.html" || file === "compare.html") {
+    assert.ok(html.includes("Add comparison"), `${file} does not include the comparison builder`);
+    assert.ok(html.includes("Parkland School District"), `${file} does not show Parkland as the anchor option`);
+  }
   assertNoBannedPhrases(path);
 }
 

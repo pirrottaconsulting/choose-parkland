@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-05-02T13:51:55.410Z",
+  "sources": [
+    "pde-2024-2025-four-year-graduation-rates"
+  ],
+  "metrics": [
+    {
+      "id": "pde-2024-2025-four-year-graduation-rates-21st-century-cyber-cs-cohort-graduation-rate",
+      "entityId": "21st-century-cyber-cs",
+      "entityName": "21st Century Cyber CS",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "4-year cohort graduation rate",
+      "value": 59.8,
+      "displayValue": "59.8%",
+      "schoolYear": "2024-2025",
+      "sourceId": "pde-2024-2025-four-year-graduation-rates",
+      "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+      "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "note": "180 graduates in a cohort of 301."
+    },
+    {
+      "id": "pde-2024-2025-four-year-graduation-rates-agora-cyber-cs-cohort-graduation-rate",
+      "entityId": "agora-cyber-cs",
+      "entityName": "Agora Cyber CS",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "4-year cohort graduation rate",
+      "value": 57.3,
+      "displayValue": "57.3%",
+      "schoolYear": "2024-2025",
+      "sourceId": "pde-2024-2025-four-year-graduation-rates",
+      "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+      "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "note": "346 graduates in a cohort of 604."
+    },
+    {
+      "id": "pde-2024-2025-four-year-graduation-rates-commonwealth-charter-academy-cs-cohort-graduation-rate",
+      "entityId": "commonwealth-charter-academy-cs",
+      "entityName": "Commonwealth Charter Academy CS",
+      "entityType": "cyber",
+      "category": "Academics",
+      "metric": "4-year cohort graduation rate",
+      "value": 73.1,
+      "displayValue": "73.1%",
+      "schoolYear": "2024-2025",
+      "sourceId": "pde-2024-2025-four-year-graduation-rates",
+      "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+      "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "note": "3,210 graduates in a cohort of 4,393."
+    },
+    {
+      "id": "pde-2024-2025-four-year-graduation-rates-parkland-school-district-cohort-graduation-rate",
+      "entityId": "parkland-school-district",
+      "entityName": "Parkland School District",
+      "entityType": "district",
+      "category": "Academics",
+      "metric": "4-year cohort graduation rate",
+      "value": 95.7,
+      "displayValue": "95.7%",
+      "schoolYear": "2024-2025",
+      "sourceId": "pde-2024-2025-four-year-graduation-rates",
+      "sourceName": "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+      "sourceUrl": "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+      "note": "763 graduates in a cohort of 797."
+    }
+  ]
+}

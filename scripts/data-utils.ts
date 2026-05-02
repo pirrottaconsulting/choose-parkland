@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync, statSync } from "node:fs";
-import { basename, dirname, join } from "node:path";
+import { basename, dirname, isAbsolute, join } from "node:path";
 import xlsx from "xlsx";
 
 export const ROOT = process.cwd();
@@ -19,6 +19,7 @@ export type SourceRecord = {
   retrievedAt: string;
   fileDate?: string;
   bytes?: number;
+  localFallbackPath?: string;
 };
 
 export type MetricRecord = {
@@ -118,6 +119,39 @@ export const officialSources: SourceRecord[] = [
     retrievedAt: RETRIEVED_AT,
   },
   {
+    id: "pde-2024-keystone-district-grade-11",
+    name: "2024 Keystone Exams District Grade 11 Data",
+    url: "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+    localPath: "data/raw/pde/2024-keystone-exams-district-grade-11-data.xlsx",
+    localFallbackPath: "/Users/chrispirrotta/Desktop/2024-keystone-exams-district-grade-11-data.xlsx",
+    category: "keystone",
+    level: "district",
+    schoolYear: "2024",
+    retrievedAt: RETRIEVED_AT,
+  },
+  {
+    id: "pde-2024-keystone-school-grade-11",
+    name: "2024 Keystone Exams School Grade 11 Data",
+    url: "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+    localPath: "data/raw/pde/2024-keystone-exams-school-grade-11-data.xlsx",
+    localFallbackPath: "/Users/chrispirrotta/Desktop/2024-keystone-exams-school-grade-11-data.xlsx",
+    category: "keystone",
+    level: "school",
+    schoolYear: "2024",
+    retrievedAt: RETRIEVED_AT,
+  },
+  {
+    id: "pde-2024-2025-four-year-graduation-rates",
+    name: "2024-2025 Pennsylvania 4-Year Cohort Graduation Rates",
+    url: "https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting",
+    localPath: "data/raw/pde/2024-2025-pennsylvania-4-year-cohort-graduation-rates.xlsx",
+    localFallbackPath: "/Users/chrispirrotta/Desktop/2024-2025 pennsylvania 4-year cohort graduation rates.xlsx",
+    category: "keystone",
+    level: "district",
+    schoolYear: "2024-2025",
+    retrievedAt: RETRIEVED_AT,
+  },
+  {
     id: "future-ready-performance-2024-2025",
     name: "Future Ready Performance Data for SY 2024-2025",
     url: "https://futurereadypa.org/home/getdatafile?id=60",
@@ -172,26 +206,35 @@ export async function readJson<T>(path: string): Promise<T> {
 }
 
 export function sourceWithFileStats(source: SourceRecord): SourceRecord {
-  const fullPath = join(ROOT, source.localPath);
+  const fullPath = sourceLocalPath(source);
   const stats = existsSync(fullPath) ? statSync(fullPath) : undefined;
+  const publicSource: SourceRecord = { ...source };
+  delete publicSource.localFallbackPath;
   return {
-    ...source,
+    ...publicSource,
     fileDate: stats?.mtime.toISOString(),
     bytes: stats?.size,
   };
 }
 
+export function sourceLocalPath(source: SourceRecord) {
+  const primary = isAbsolute(source.localPath) ? source.localPath : join(ROOT, source.localPath);
+  if (existsSync(primary)) return primary;
+  if (source.localFallbackPath && existsSync(source.localFallbackPath)) return source.localFallbackPath;
+  return primary;
+}
+
 export function readWorkbookRows(path: string, range = 0): Record<string, unknown>[] {
-  const workbook = xlsx.readFile(join(ROOT, path), { cellDates: false });
+  const workbook = xlsx.readFile(isAbsolute(path) ? path : join(ROOT, path), { cellDates: false });
   const sheet = workbook.Sheets[workbook.SheetNames[0]];
   return xlsx.utils.sheet_to_json<Record<string, unknown>>(sheet, { range, defval: "" });
 }
 
-export function readWorkbookSheet(path: string, sheetName: string): Record<string, unknown>[] {
-  const workbook = xlsx.readFile(join(ROOT, path), { cellDates: false });
+export function readWorkbookSheet(path: string, sheetName: string, range = 0): Record<string, unknown>[] {
+  const workbook = xlsx.readFile(isAbsolute(path) ? path : join(ROOT, path), { cellDates: false });
   const sheet = workbook.Sheets[sheetName];
   if (!sheet) return [];
-  return xlsx.utils.sheet_to_json<Record<string, unknown>>(sheet, { defval: "" });
+  return xlsx.utils.sheet_to_json<Record<string, unknown>>(sheet, { range, defval: "" });
 }
 
 export function clean(value: unknown) {

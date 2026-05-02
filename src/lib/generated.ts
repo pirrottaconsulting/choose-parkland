@@ -1,5 +1,6 @@
 import allMetricsData from "@/data/generated/all-metrics.json";
 import comparisonContentData from "@/data/generated/comparison-content.json";
+import comparisonMatrixData from "@/data/generated/comparison-matrix.json";
 import entitiesData from "@/data/generated/entities.json";
 import sourceManifestData from "@/data/generated/source-manifest.json";
 
@@ -12,6 +13,7 @@ export const categories = allMetricsData.categories;
 export const entities = entitiesData.entities as Entity[];
 export const sourceManifest = sourceManifestData.sources as Source[];
 export const comparisonContent = comparisonContentData;
+export const comparisonMatrix = comparisonMatrixData;
 
 export function sourceForMetric(metric: Metric) {
   return sourceManifest.find((source) => source.id === metric.sourceId);

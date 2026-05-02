@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { ComparisonExplorer } from "@/components/ComparisonExplorer";
 import { DataDashboard } from "@/components/DataDashboard";
 import { DataTable } from "@/components/DataTable";
 import { PageHero } from "@/components/PageHero";
+import { ParklandComparisonBuilder } from "@/components/ParklandComparisonBuilder";
 import { Section } from "@/components/Section";
 import { SourceList } from "@/components/SourceList";
 
@@ -24,8 +24,8 @@ export default function ComparePage() {
       <Section eyebrow="Dashboard" title="Latest official data available in this build.">
         <DataDashboard />
       </Section>
-      <Section tone="soft" eyebrow="Filters" title="Choose a comparison category.">
-        <ComparisonExplorer limit={24} />
+      <Section tone="soft" eyebrow="Comparison builder" title="Keep Parkland fixed and add options to the right.">
+        <ParklandComparisonBuilder />
       </Section>
       <Section title="Visible comparison table">
         <DataTable />
