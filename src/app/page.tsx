@@ -1,65 +1,143 @@
-import Image from "next/image";
+import Link from "next/link";
+import { ClaimBlock } from "@/components/ClaimBlock";
+import { ComparisonCard } from "@/components/ComparisonCard";
+import { DataCallouts } from "@/components/DataCallouts";
+import { Section } from "@/components/Section";
+import { SourceNote } from "@/components/SourceNote";
+import { comparisonCriteria, lastUpdated } from "@/data";
+import { getClaim } from "@/lib/site";
 
 export default function Home() {
+  const heroClaim = getClaim("compare-before-deciding");
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <section className="relative overflow-hidden bg-[#f7fbf8]">
+        <div className="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-[#0f766e] via-[#2563eb] to-[#f59e0b]" />
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#0f766e]">
+              Parent education comparison
+            </p>
+            <h1 className="mt-5 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">
+              Compare what Parkland already offers before choosing another path.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+              A calm, factual guide for families evaluating district, charter, cyber charter,
+              private, and alternative education options in and around Parkland School District.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/compare"
+                className="rounded-lg bg-slate-950 px-5 py-3 text-center text-sm font-bold text-white hover:bg-slate-800"
+              >
+                Compare your options
+              </Link>
+              <Link
+                href="/parkland-virtual-academy"
+                className="rounded-lg border border-slate-300 bg-white px-5 py-3 text-center text-sm font-bold text-slate-950 hover:border-slate-400"
+              >
+                Explore Parkland Virtual Academy
+              </Link>
+            </div>
+            <SourceNote sourceIds={heroClaim.sourceIds} />
+          </div>
+          <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl">
+            <div className="rounded-lg bg-slate-950 p-5 text-white">
+              <p className="text-sm font-semibold text-teal-200">Decision dashboard</p>
+              <p className="mt-3 text-3xl font-black tracking-tight">
+                District resources. Virtual flexibility. Official data.
+              </p>
+            </div>
+            <div className="mt-4 grid gap-3">
+              {["Academics", "Activities", "Support", "Community", "Accountability"].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="flex items-center justify-between rounded-lg border border-slate-200 px-4 py-3"
+                  >
+                    <span className="font-semibold text-slate-800">{item}</span>
+                    <span className="text-sm text-slate-500">Compare</span>
+                  </div>
+                ),
+              )}
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <Section
+        eyebrow="Latest official data"
+        title="Data first, with clear placeholders where ingestion is still pending."
+        description={`Latest official data language is used throughout. Automated source checks are scaffolded; current check status: ${lastUpdated.officialDataChecked}.`}
+      >
+        <DataCallouts />
+      </Section>
+
+      <Section
+        tone="soft"
+        eyebrow="What families compare"
+        title="A practical framework for choosing a school option."
+        description="The goal is not to label one option as good or bad. It is to help parents understand tradeoffs and verify facts before deciding."
+      >
+        <div className="grid gap-5 lg:grid-cols-2">
+          {comparisonCriteria.slice(0, 4).map((criterion) => (
+            <ComparisonCard key={criterion.id} criterion={criterion} />
+          ))}
         </div>
-      </main>
-    </div>
+      </Section>
+
+      <Section
+        eyebrow="Flexibility without leaving the district"
+        title="Parkland Virtual Academy belongs in the comparison."
+        description="Families considering online learning should compare cyber charter options with any district-connected virtual pathway, including access to district resources, services, community, activities, and accountability."
+      >
+        <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+          <ClaimBlock claimId="pva-flexibility" />
+          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f766e]">
+              Parent pathway
+            </p>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              {[
+                "Ask how virtual courses are staffed.",
+                "Confirm access to activities and services.",
+                "Compare official accountability data.",
+                "Verify enrollment and eligibility details.",
+              ].map((item) => (
+                <div key={item} className="rounded-lg bg-slate-50 p-4 text-sm font-medium text-slate-700">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section
+        tone="soft"
+        eyebrow="Questions parents should ask"
+        title="Before choosing a charter, cyber charter, or alternative school."
+        description="A parent-friendly sales engine should still be measured and factual. These questions help families evaluate fit without pressure."
+      >
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            "Which official data files include this school?",
+            "How current are the published performance results?",
+            "What services are available if my child needs support?",
+            "What activities and local community connections are available?",
+            "How does virtual learning keep students accountable?",
+            "What should be verified directly with the school before enrolling?",
+          ].map((question) => (
+            <div
+              key={question}
+              className="rounded-lg border border-slate-200 bg-white p-5 font-semibold text-slate-800 shadow-sm"
+            >
+              {question}
+            </div>
+          ))}
+        </div>
+      </Section>
+    </>
   );
 }

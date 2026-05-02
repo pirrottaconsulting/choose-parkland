@@ -2,11 +2,15 @@
   "name": "choose-parkland",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "data:check": "node --experimental-strip-types scripts/check-official-data.ts",
+    "data:monitor": "node --experimental-strip-types scripts/monitor-official-sources.ts",
+    "data:summarize": "node --experimental-strip-types scripts/summarize-data-changes.ts"
   },
   "dependencies": {
     "next": "16.2.4",

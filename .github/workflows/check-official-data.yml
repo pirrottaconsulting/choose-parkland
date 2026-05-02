@@ -1,0 +1,57 @@
+name: Check official education data
+
+on:
+  schedule:
+    - cron: "23 10 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-official-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check official source pages
+        id: check
+        run: npm run data:check
+
+      - name: Upload monitoring report
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-data-check
+          path: reports/official-data-check.json
+
+      - name: Open issue when a potential update is detected
+        if: steps.check.outputs.has_potential_update == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Review potential official education data update";
+            const body = [
+              "The weekly monitor found a source header that may be newer than the current site content date.",
+              "",
+              "Review the uploaded `official-data-check` artifact, verify the official files manually, then update the typed data files if needed.",
+              "",
+              "This workflow uses polite source checks and does not scrape aggressively."
+            ].join("\n");
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ["data-update"]
+            });
